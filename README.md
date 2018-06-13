@@ -150,9 +150,9 @@ abcd
 連想配列: `ary={'color':'red','size':'100'}`
 追加する要素: `{'count':'5'}`
 ```
-key: color value: red
-key: size value: 100
-key: count value: 5
+keyは: color valueは: red
+keyは: size valueは: 100
+keyは: count valueは: 5
 ```
 
 
@@ -213,7 +213,8 @@ add();
 
 ---
 #### 21 shadow
-画面にheight:auto、width:400pxの画像を横方向に6枚出力してください。3枚目の画像にはふちに影をつけて強調してください。
+画面にheight:auto、width:400pxの画像を横方向に6枚出力してください。3枚目の画像にはふちに影をつけて強調してください。最後にもう一枚画像を出力してください。最後の一枚一つ下の領域に斜めにして表示してください
+![shadow.png](./img/shadow.png)
 
 
 
