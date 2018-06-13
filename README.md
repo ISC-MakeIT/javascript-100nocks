@@ -4,6 +4,8 @@
 ## 目標
 HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
+回答は[answer](./answer)にあります。自分と相談してから確認して下さい。
+
 ### Warm up
 
 ---
@@ -25,7 +27,7 @@ console.logを使ってコンソールに「Hello JavaScript」と出力して�
 
 ---
 #### 5 bored
-画面中央に表示された「I'm so bored」の文字をクリックすると「AWESOME!」に書き換わるプログラムを作成してください。文字は大きさ128px、色黒以外
+画面中央に表示された「I'm so bored」の文字をクリックすると「AWESOME!」に書き換わるプログラムを作成してください。「AWESOME」は大きさ128px、色黒以外
 
 ---
 #### 6 isSame
@@ -55,8 +57,8 @@ console.logを使ってコンソールに「Hello JavaScript」と出力して�
 #### 11 array1
 配列内を順にコンソール出力してください  
 入力:  `const ary = ['a','b','c','d','e','f','g'];`  
-e.g.: 
-```
+出力: 
+```javascript
 a
 b
 c
@@ -72,7 +74,7 @@ g
 #### 12 array2
 配列内を順にコンソール出力してください。出力の際に各要素のindex値を足して下さい  
 入力:  `const ary = ['a','b','c','d','e','f','g'];`  
-e.g.: 
+出力: 
 ```
 a0
 b1
@@ -105,10 +107,10 @@ false
 以下の様に宣言された変数の型を評価して出力してください。  
 入力: 
 ```javascript
-var num=1 
-var zero=0
-var str='1'
-var zs='0'
+var num=1; 
+var zero=0;
+var str='1';
+var zs='0';
 ```
 出力
 ```javascript
@@ -145,8 +147,8 @@ abcd
 ---
 #### 17 rensouhairetu
 連想配列に値を1つ追加し、配列内のすべてのkeyとvalueを出力してください
-連想配列: `ary={'color':'red','size','100'}`
-追加する要素: `count : 5`
+連想配列: `ary={'color':'red','size':'100'}`
+追加する要素: `{'count':'5'}`
 ```
 key: color value: red
 key: size value: 100
