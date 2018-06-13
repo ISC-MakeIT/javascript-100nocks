@@ -13,19 +13,27 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 #### 1 saisyo
 HTMLファイルを作成し、MakeITと表示してください。文字はCSSを使って色を#20D0F0にしてください  
-![saisyo.html](./img/saisyo.png)
+
+![saisyo](./img/saisyo.png)
 
 ---
 #### 2 centerDiv
 300px四方のdivを画面の上部中央に表示してください。色は赤、画面幅が変わっても中心に移動するようにして下さい
 
+![centerDiv](./img/centerDiv.png)
+
 ---
 #### 3 helloTable 
 3x3の表を画面に表示して下さい。コンテンツはすべて「こんにちは」。一番左の列は縦に３つ結合してください
 
+![helloTable](./img/helloTable.png)
+
+
 ---
 #### 4 console
 console.logを使ってコンソールに「Hello JavaScript」と出力して下さい
+
+![console](./img/console.png)
 
 ---
 
