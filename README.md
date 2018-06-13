@@ -220,7 +220,7 @@ add();
 
 ---
 #### pulldown
-0から200まで選択できるプルダウンメニューを作ってください。javascript:document.createElement()を使ってください
+0から200まで選択できるプルダウンメニューを作ってください。javascript:document.createElement()を使うこと
 
 
 
@@ -243,7 +243,7 @@ formタグの属性にmethod="get"を追加し、送信後のURLを確認して�
 
 ---
 #### 24 marquee
-`<marquee scrolldelay="50" truespeed>a</marquee>`を設置して下さい。癒されたら完了です
+`<marquee scrolldelay="50" truespeed>癒し</marquee>`を設置して下さい。癒されたら完了です
 
 
 
