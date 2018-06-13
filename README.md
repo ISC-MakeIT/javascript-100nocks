@@ -36,10 +36,6 @@ console.logを使ってコンソールに「Hello JavaScript」と出力して�
 ![console](./img/console.png)
 
 ---
-
-## - Baby
----
-
 #### 5 bored
 画面中央に表示された「I'm so bored」の文字をクリックすると「AWESOME!」に書き換わるプログラムを作成してください。「AWESOME」は大きさ128px、色黒以外
 
@@ -63,7 +59,8 @@ console.logを使ってコンソールに「Hello JavaScript」と出力して�
 
 ---
 
-## - Easy
+
+## - Baby
 ---
 
 
@@ -175,8 +172,8 @@ keyは: count valueは: 5
 
 ---
 
+## - Easy
 
-## - Medium easy
 ---
 
 #### 18 add
@@ -359,8 +356,7 @@ aタグのリンクの下線を消す
 ---
 
 
-
-## - Medium
+## - Medium easy
 ---
 
 
