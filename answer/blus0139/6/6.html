@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <input type="text" id="left"><input type="text" id="right"><button onclick="hikaku()">比較</button>
+    <input type="text" id="leftText"><input type="text" id="rightText"><button onclick="hikaku()">HKAKU</button>
     <script>
         function hikaku() {
-            var a = document.getElementById("left").value;
-            var b = document.getElementById("right").value;
+            var a = document.getElementById("leftText").value;
+            var b = document.getElementById("rightText").value;
 
             if (a == b) {
                 alert("True");
