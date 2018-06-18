@@ -12,15 +12,15 @@
     </style>
 </head>
 <body>
-    <form action="" name="hamraro" id="hamtaro">
+    <form action="" name="hamraro" id="isSame">
         <input type="number" name="num1" id="num1">
         <input type="number" name="num2" id="num2">
         <input type="button" value="比較するのだ" onclick="hikaku()">
     </form>
     <script>
         function hikaku() {
-            var num1 = document.forms.hamtaro.num1.value;
-            var num2 = document.forms.hamtaro.num2.value;
+            var num1 = document.forms.isSame.num1.value;
+            var num2 = document.forms.isSame.num2.value;
             if (num1 == "") {
                 alert ("入力してくれないと判定できないのだ");
             } else if (num1 != num2) {
