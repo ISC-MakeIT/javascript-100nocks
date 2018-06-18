@@ -6,7 +6,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 一例としての回答を[answer](./answer/example)に設置します。自分と相談してから確認して下さい。
 
-[※回答方法は解答手順](./answer/example/解答手順.md)  
+[※回答方法は解答手順](./answer/example/回答手順.md)  
 [※source treeを使った解答手順](https://qiita.com/ymzk-jp/private/50a912f8d15c5d380ddb)  
 
 ---
