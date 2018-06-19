@@ -27,7 +27,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     300px四方のdivを画面の上部中央に表示してください。色は赤、画面幅が変わっても中心に移動するようにして下さい
 
 
-    [centerDiv](https://gyazo.com/0170938c22faeeea1a0f2bc8904c5d3e)
+    ![centerDiv](./img/centerDiv.gif)
 
     ---
 1. ## helloTable 
@@ -378,11 +378,25 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     テキストフォームから指定された数値が、37 dupSort で作成した配列内にある場合削除し、削除後配列の大きさを削除した分だけ縮小した配列を返すプログラムを作成して下さい。指定された数が見つからなかった場合は「error: Can't deleted」と出力して下さい
 
 
+    ---
+
+1. ## jquery
+    ボタンを押すと「Cosmos」が「Chaos」に書き換わるようにしてください
+    jqueryのCDNを読み込んでjqueryを使って実装してください
 
 
 
+1. ## incrementHello
+    ボタンを押すとボタンの下に 「Hello」 + 押した回数が追加されるプログラムを作成してください
+    jqueryを使って実装してください
 
 
+
+1. ## chageColor
+    画面に要素を3つ配置しクリックすると背景色が変わるようにしてください
+    それぞれjqueryを使って実装してください
+    やり方は一つとは限りません。それぞれ別の実装方法で実現してみて下さい
+    ![changeColor](./img/changeColor.gif)
 
 
 
