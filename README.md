@@ -6,8 +6,8 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 一例としての回答を[answer](./answer/example)に設置します。自分と相談してから確認して下さい。
 
-[※回答方法は解答手順](./answer/example/解答手順.md)  
-[※source treeを使った解答手順]()  
+[※回答方法は解答手順](./answer/example/回答手順.md)  
+[※source treeを使った解答手順](https://qiita.com/ymzk-jp/private/50a912f8d15c5d380ddb)  
 
 ---
 <!-- <details><summary>問1〜問50</summary>
@@ -360,8 +360,8 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     テキストフォームから入力された16進数を10進数にして出力してください
 
 
-1. ## duplicate
-    1～100までのランダムな整数を重複なく100個格納した配列を出力するプログラムを作成して下さい。
+    1～75までのランダムな整数を重複なく25個格納した配列を出力するプログラムを作成して下さい。
+    数字が重複しないよう気をつけて下さい。
 
 
     ---
