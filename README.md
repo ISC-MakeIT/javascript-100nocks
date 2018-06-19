@@ -262,17 +262,15 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## shadow
-    画面にheight:auto、width:400pxの画像を横方向に6枚出力してください。3枚目の画像には、縁に影をつけて強調してください。画像は画面端で自動的に折り返すようにしてください。  
-    最後にもう一枚画像を出力してください。最後の一枚一つ下の領域に斜めにして表示してください
-    画像の
+    準備中
 
-    ![shadow.png](./img/shadow.png)
-
+    ![construction](./img/construction.jpg)
 
 
 
 1. ## pulldown
     0から200まで選択できるプルダウンメニューを作ってください。javascript:document.createElement()を使うこと
+
 
 
 
