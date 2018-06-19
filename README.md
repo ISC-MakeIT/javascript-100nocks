@@ -27,7 +27,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     300px四方のdivを画面の上部中央に表示してください。色は赤、画面幅が変わっても中心に移動するようにして下さい
 
 
-    ![centerDiv](./img/centerDiv.png)
+    [centerDiv](https://gyazo.com/0170938c22faeeea1a0f2bc8904c5d3e)
 
     ---
 1. ## helloTable 
