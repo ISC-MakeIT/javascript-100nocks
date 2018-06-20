@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>22.tanuki</title>
+    <style>
+        div {
+            width: 500px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" name="tanuki" id="tanuki">
+        <textarea name="tanuki" id="tanukiTxt" cols="60" rows="10"></textarea><br>
+        <input type="button" onclick="t()" value="たぬき">
+    </form>
+    <div id="kekka"></div>
+    <script>
+        /*
+        const tanuki = "ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。わたたしがからだをゆすっても、ふきれいな音は出ないけど、あの鳴る鈴はわたたしのように、たたくさんなうたたは知らないよ。鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。";
+        const len = tanuki.length;
+        var kekka = '';
+
+        kekka = tanuki.replace('たた','た');
+        kekka = kekka.replace('ふ','');
+
+        console.log(kekka);
+        */
+        function t() {
+            let tanukiTxt = document.forms.tanuki.tanukiTxt.value;
+            
+            for (let i = 0; i < tanukiTxt.length; i++){
+            tanukiTxt = tanukiTxt.replace('たた','た');
+            tanukiTxt = tanukiTxt.replace('ふ','');
+            console.log(kekka);
+            document.getElementById('kekka').innerText = tanukiTxt;
+            }
+        }
+    </script>
+</body>
+</html>
