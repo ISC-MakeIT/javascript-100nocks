@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
 </head>
+
 <body>
-    <input type ="number" id = "n">
-    <input type ="button" id = "goukei" value= "合計" onclick= "sum();">
-    <script>
-    function sum(){
-        var i = document.getElementById("n").value
-        var g = 0;
-        for(var h = 0; h <= i; h++){
-            var g =(h + g);
-            }
-    console.log(g)
-    }
-    </script>
+	<input type="number" id="n">
+	<input type="button" id="goukei" value="合計" onclick="sum();">
+	<script>
+		function sum() {
+			var i = document.getElementById("n").value
+			var g = 0;
+			for (var h = 1; h <= i; h++) {
+				var g = h + g;
+			}
+			console.log(g);
+		}
+	</script>
 </body>
+
 </html>
