@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input id="hirabun">
+    <button onclick="angou()">暗号化</button>
+    <script>
+        function angou() {
+            var i = 0;
+            var ary = 0;
+            var hirabun = document.getElementById("hirabun").value;
+            while (hirabun != 0) {
+                hirabun1 = hirabun / 10;
+                hirabun1 = Math.floor(hirabun1);
+                hirabun1 *= 10;
+                hirabun2 = hirabun - hirabun1
+                hirabun = hirabun - hirabun2;
+                ary[i] = hirabun2;
+            }
+            console.log(ary.length);
+
+        }
+    </script>
+
+</body>
+
+</html>
