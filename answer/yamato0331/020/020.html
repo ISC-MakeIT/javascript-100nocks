@@ -12,20 +12,42 @@
 
     <input id="hirabun">
     <button onclick="angou()">暗号化</button>
+    <p id="angouka"></p>
     <script>
         function angou() {
             var i = 0;
-            var ary = 0;
+            var ary = [];
             var hirabun = document.getElementById("hirabun").value;
-            while (hirabun != 0) {
+            while (hirabun > 9) {
                 hirabun1 = hirabun / 10;
                 hirabun1 = Math.floor(hirabun1);
                 hirabun1 *= 10;
                 hirabun2 = hirabun - hirabun1
-                hirabun = hirabun - hirabun2;
+                hirabun = (hirabun - hirabun2) / 10;
                 ary[i] = hirabun2;
+                i += 1;
             }
-            console.log(ary.length);
+            ary[i] = hirabun;
+            i = 0;
+            var cnt = 0;
+            var length = ary.length; //6
+            while (length > 0) {
+                cnt = 0;
+                while (cnt < 2) {
+                    ary.splice(i, 0, Math.floor(Math.random() * 10));
+                    cnt += 1;
+                }
+                i += 3;
+                length -= 1;
+            }
+            length = ary.length - 1;
+            var string = "";
+            while (length >= 0) {
+                string += ary[length] + "";
+                console.log(string);
+                document.getElementById("angouka").textContent = string;
+                length -= 1;
+            }
 
         }
     </script>
