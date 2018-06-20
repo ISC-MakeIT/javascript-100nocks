@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="tx" style="text-align: center">I'm so bored</p>
+
+    <script>
+        var tx = document.getElementById("tx");
+        tx.addEventListener("click",function(){
+            tx.textContent = "AWESOME";
+            tx.style.color = "aqua";
+            tx.style.fontSize = "128px";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script id="js">
+        function addPullDown() {
+            var select = document.createElement("select");
+            select.id = "number";
+            var script = document.getElementById("js");
+            document.body.appendChild(select);
+
+            for (let i = 0; i <= 200; i++) {
+                var option = document.createElement("option");
+                option.value = i;
+                var content = document.createTextNode(i);
+                option.appendChild(content);
+               
+                select.appendChild(option);
+            }
+
+
+        }
+
+        addPullDown();
+    </script>
+</body>
+
+</html>
