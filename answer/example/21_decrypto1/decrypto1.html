@@ -6,15 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <style>
-    p {
-      color: #20D0F0
-    }
-  </style>
 </head>
 
 <body>
-  <p>Make IT</p>
+  <script>
+    const word = 'やくこみがんきいばていんるよは'
+    let out = '';
+    for (let i = 1; i <= word.length; i++) {
+      if (0 === i % 3) {
+        out += word[i - 1];
+      }
+    }
+    console.log(out);
+  </script>
 </body>
 
 </html>
