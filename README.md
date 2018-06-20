@@ -224,7 +224,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     暗号のルール: 各数字の後ろに2つ余計な数字を追加する  
     例
     ```js
-    const word='123';
+    var word='123';
     ～処理～
     console.log(word); //=>198276354
     ```
