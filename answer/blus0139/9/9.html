@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        span.mark1 {
+            background-color: yellow;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="center">
+        <p>count:<span id="osu">0</span></p>
+        <div><input type="button" onclick="CountUp();" value="osu!!"></div>
+    </div>
+    <script language="javascript" type="text/javascript">
+        var kaisu = 0;
+
+        function CountUp() {
+            document.getElementById("osu").innerHTML = ++kaisu;
+            var backupOriginal = ""
+            if (kaisu % 3 == 0) {
+                function addhighlight() {
+                    backupOriginal = document.getElementById("osu").innerHTML;
+                    var forShow = backupOriginal;
+                    forShow = replacer(forShow, "kaisu", "mark1");
+                    document.getElementById("osu").innerHTML = forShow;
+                }
+            } else {
+                function clearhighlight() {
+                    document.getElementById("osu").innerHTML = backupOriginal;
+                    backupOriginal = "";
+                }
+            }
+        }
+
+        function highlightcheck() {
+            if (backupOriginal.length == 0) {
+                addhighlight();
+            } else {
+                clearhighlight();
+            }
+        }
+    </script>
+</body>
+
+</html>
