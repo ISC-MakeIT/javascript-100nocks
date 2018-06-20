@@ -7,23 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<p id="motobun">ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。
 
+        わたたしがからだをゆすっても、ふきれいな音は出ないけど、あの鳴る鈴はわたたしのように、たたくさんなうたたは知らないよ。
+        
+        鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。</p>
 <body>
 
     <script>
-        var misuzu = "ふわたたしが両手をひろげても、\
-                        お空はちっとも飛べないが、\
-                        飛べる小鳥はわたたしのように、\
-                        地面をはやくは走れない。\
-                        \
-                        わたたしがからだをゆすっても、\
-                        ふきれいな音は出ないけど、\
-                        あの鳴る鈴はわたたしのように、\
-                        たたくさんなうたたは知らないよ。\
-                        \
-                        鈴と、小鳥と、それからわたたし、\
-                        みんなふちがって、みんないい。"
-
+        var misuzu = document.getElementById("motobun").textContent;
         for (let i = 0; i < misuzu.length; i++) {
             misuzu = misuzu.replace("ふ", "");
             misuzu = misuzu.replace("たた", "た");

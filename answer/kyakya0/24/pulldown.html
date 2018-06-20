@@ -11,25 +11,19 @@
 <body>
 
 
-    <script id="js">
+    <script>
         function addPullDown() {
             var select = document.createElement("select");
             select.id = "number";
-            var script = document.getElementById("js");
             document.body.appendChild(select);
 
             for (let i = 0; i <= 200; i++) {
                 var option = document.createElement("option");
-                option.value = i;
-                var content = document.createTextNode(i);
-                option.appendChild(content);
-               
+                option.textContent = i;
+
                 select.appendChild(option);
             }
-
-
         }
-
         addPullDown();
     </script>
 </body>
