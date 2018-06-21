@@ -7,7 +7,7 @@
     <title>27.slider</title>
 </head>
 <body>
-        <p id="slider"><marquee scrolldelay="50" truespeed>癒し</marquee></p>
+        <p><marquee scrolldelay="50" truespeed id="slider">癒し</marquee></p>
         <input type="range" name="range" id="range" min="0" max="100" value="50">
         <span id="value">50</span>
 
@@ -18,9 +18,8 @@
                 return function(kekka) {
                     value.innerText = range.value;
                     /* ここまでググってどうにかした */
-                    //var slider = document.getElementById('slider');
-                    // slider.scrolldelay = range.value; 適用されなかった…（なぜ？）
-                    var target = document.getElementById("slider");
+                    var slider = document.getElementById('slider');
+                    // lider.scrolldelay = range.value; 適用されなかった…（なぜ？）
                     target.innerHTML = "<marquee scrolldelay='" + range.value + "' truespeed>GORIOSHI</marquee>";
                 }
             }
