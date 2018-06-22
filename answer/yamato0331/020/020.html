@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input id="hirabun">
+    <button onclick="angou()">暗号化</button>
+    <p id="angouka"></p>
+    <script>
+        function angou() {
+            var i = 0;
+            var ary = [];
+            var hirabun = document.getElementById("hirabun").value;
+            while (hirabun > 9) {
+                hirabun1 = hirabun / 10;
+                hirabun1 = Math.floor(hirabun1);
+                hirabun1 *= 10;
+                hirabun2 = hirabun - hirabun1
+                hirabun = (hirabun - hirabun2) / 10;
+                ary[i] = hirabun2;
+                i += 1;
+            }
+            ary[i] = hirabun;
+            i = 0;
+            var cnt = 0;
+            var length = ary.length; //6
+            while (length > 0) {
+                cnt = 0;
+                while (cnt < 2) {
+                    ary.splice(i, 0, Math.floor(Math.random() * 10));
+                    cnt += 1;
+                }
+                i += 3;
+                length -= 1;
+            }
+            length = ary.length - 1;
+            var string = "";
+            while (length >= 0) {
+                string += ary[length] + "";
+                console.log(string);
+                document.getElementById("angouka").textContent = string;
+                length -= 1;
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        function sum() {
+            var syokiti = document.getElementById("number").value;
+            var syokiti2 = document.getElementById("number").value;
+            var hikusuu = 1;
+            var kekka = "2進数では ";
+            var c = 1;
+
+            for (var a = 1; syokiti > 1; a++) {
+                syokiti /= 2;
+            }
+
+            while (c < a) {
+                hikusuu = hikusuu * 2;
+                c += 1;
+
+            }
+
+            while (hikusuu >= 1) {
+                if (syokiti2 - hikusuu >= 0) {
+                    syokiti2 -= hikusuu;
+                    kekka += "1";
+                    hikusuu /= 2;
+                } else {
+                    kekka += "0";
+                    hikusuu /= 2;
+                }
+            }
+            document.getElementById("kekka1").textContent = kekka;
+        }
+    </script>
+</head>
+
+<body>
+    <input id="number">
+    <button onclick="sum()">計算</button>
+    <p id="kekka1"> </p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="concat15()">concat(15)</button>
+    <script>
+        function concat15() {
+
+            var ary1 = ['a', 'b'];
+            var ary2 = ['c', 'd'];
+            var i = 0;
+            while (i < ary2.length) {
+                ary1.push(ary2[i]);
+                i += 1;
+            }
+            var b = 0;
+            var c = "";
+            while (b < ary1.length) {
+                c += ary1[b];
+                b += 1;
+
+            }
+            console.log(c);
+        }
+    </script>
+</body>
+
+</html>

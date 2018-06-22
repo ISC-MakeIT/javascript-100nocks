@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="tanuki">
+        ふわたたしが両手をひろげても、 お空はちっとも飛べないが、 飛べる小鳥はわたたしのように、 地面をはやくは走れない。 わたたしがからだをゆすっても、 ふきれいな音は出ないけど、 あの鳴る鈴はわたたしのように、 たたくさんなうたたは知らないよ。 鈴と、小鳥と、それからわたたし、 みんなふちがって、みんないい。
+    </p>
+    <button onclick="init()">判定</button>
+    <script>
+        function init() {
+            var text = document.getElementById("tanuki");
+            var ary = text.innerText;
+            // var array = [0, 1, 2];
+            //  ary.splice(3, 1);
+            var i = 0;
+            var ary1 = [];
+            while (i > ary.length) {
+                ary1[i] = ary[i];
+                i += 1;
+            }
+            console.log(ary1[0]);
+
+
+            // document.getElementById("tanuki").textContent = text;
+            i = 0;
+            while (i > 154) {
+                while (ary[i] != ary[i + 1] && ary[i] != "た") {
+                    i += 1;
+                }
+                ary[i] = "";
+            }
+            i = 0;
+            while (i > 154) {
+                while (ary[i] != "ふ") {
+                    i += 1;
+                }
+                ary[i] = "";
+            }
+
+            i = 0;
+            while (i < 154) {
+                var string = string + ary[i];
+                i += 1;
+            }
+            text.innerText = ary;
+        }
+    </script>
+</body>
+
+</html>
