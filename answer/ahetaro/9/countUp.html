@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="valuePuls">1</p>
+    <button onclick="valuePuls()">PULS(10)</button>
+    <script>
+        var Puls = 0;
+
+        function valuePuls() {
+            Puls += 1;
+            if (Puls % 3 == 0) {
+                document.getElementById("valuePuls").textContent = Puls + "<<水素の音ぉおお>>";
+                console.log("ナベアツだと思った？")
+            } else {
+                document.getElementById("valuePuls").textContent = Puls;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
