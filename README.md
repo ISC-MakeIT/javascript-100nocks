@@ -521,8 +521,36 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
  ```
 
 54. fadeを使ってみよう
- - fade in マウスが重なったらfadeout
-    
- - fade out マウスっが離れたらfadein
+ - fade in 
+    'js-fade-in-button' を押したらboxクラスのhiddenになっているオブジェクトをfadeInする
+ - fade out 
+    現状で表示されているboxクラスのオブジェクトをfadeOutする
+
+```css
+<style>
+    span { color:red; cursor:pointer; }
+    .container > div { margin:3px; width:80px; display:none;
+        height:80px; float:left; }
+    div#one { background:#f00; }
+    div#two { background:#0f0; }
+    div#three { background:#00f; }
+</style>
+```
+
+```html
+<div class="container mt-4">
+    <div id="one" class="box"></div>
+    <div id="two" class="box"></div>
+    <div id="three" class="box"></div>
+    <div class='d-flex flex-column'>
+    <button class='btn btn-lg btn-info js-fade-in-button'>
+        fadeIn
+    </button>
+    <button class='btn btn-lg btn-warning js-fadeout-button'>
+        FadeOut
+    </button>
+    </div>
+</div>
+```
 
 55. animateする
