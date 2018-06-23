@@ -198,7 +198,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## wather
     配列aryの内容をランダムに出力するプログラムを作成してください。  
-    配列ary `ary=['晴れ','雨','曇り','槍',]`  
+    配列ary `ary=['晴れ','雨','曇り','槍']`  
     e.g.出力
     ```
     今日の天気は 槍 です
@@ -224,7 +224,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     暗号のルール: 各数字の後ろに2つ余計な数字を追加する  
     例
     ```js
-    const word='123';
+    var word='123';
     ～処理～
     console.log(word); //=>198276354
     ```
@@ -293,6 +293,8 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     必須項目が入力されていない場合、入力を促すような仕組みにすること()
     ```
 
+    
+    ![form](./img/form.gif)
 
 
 
@@ -406,6 +408,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## dupDel
     テキストフォームから指定された数値が、37 dupSort で作成した配列内にある場合削除し、削除後配列の大きさを削除した分だけ縮小した配列を返すプログラムを作成して下さい。指定された数が見つからなかった場合は「error: Can't deleted」と出力して下さい
 
+
 1. ## partOfTable
     25マスのテーブルを用意し、それぞれのマス目に1～75の数字を割り当ててください。数字は昇順で重複がないようにしてください
 
@@ -455,46 +458,34 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## selectImage
     removeImageを改造して画像の追加上限を3枚に増やして下さい。画像をクリックした場合、クリックした画像のみ消去されるようにしてください
 
----
-## jquery
-  この章ではjQueryを利用します。jQueryを利用する際はjQueryを読み込む必要があるので以下の記述を必要なHTMLファイルから読み込むようにしましょう
+    ----------------------------------------
 
-  Tips: CDNという方法を利用して読み込んでいます。CDNとはなんでしょう？
+    以下の問題では、CSSはbootstrapを利用して見ましょう。
+    bootstrapは特定のクラスを与えるとすでに用意されたCSSを適用することができます。
+    詳しくはwebで（https://getbootstrap.com/docs/4.0/getting-started/introduction/）
+    ```html
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- JS, Popper.js, and jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
 
-  また本章では、CSSはbootstrapを利用して見ましょう。
-  bootstrapは特定のクラスを与えるとすでに用意されたCSSを適用することができます。
-  詳しくはwebで（https://getbootstrap.com/docs/4.0/getting-started/introduction/）
-  ```html
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- JS, Popper.js, and jQuery -->
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"
-    ></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"
-    ></script>
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"
-    ></script>
+    ```
 
-  ```
-
-50. jqueryとはなんなのでしょうか。これを使うメリットを回答してください。またこれを利用する際に通常のJavascriptとの違いについても回答してください。
-
-51. Domの取得とテキスト、CSSの書き換え
-    - 'this is black string'という文字をファイルに配置しましょう。
-    - その文字をクリックしたら、
-      - 文字を 'this is red !'という内容に変更
-      - jqueryでStyleを'color: red'にしてください
-
-52. find関数, closest関数を利用してみよう
+1. ## find関数, closest関数を利用してみよう
   - wrapクラスのdivを用意し、`$(.wrap)`で取得したjQueryオブジェクトを変数wrapperに格納
   - find関数で'link-container'の中のaタグを変数'anchor'に格納しそのhref属性を取得しconsoleに出力してください
 
@@ -507,7 +498,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     </div>
     ```
 
-53. click関数を使おう
+1. ## click関数を使おう
  - buttonをクリックしたらクラスを'btn-default' -> 'btn-warning'に変わる
  - ’ボタンだよ’ -> '押せません'にテキストを変更
  - ボタンを押せないようにする
@@ -520,7 +511,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     </div>
  ```
 
-54. fadeを使ってみよう
+1. ## fadeを使ってみよう
  - fade in 
     'js-fade-in-button' を押したらboxクラスのhiddenになっているオブジェクトをfadeInする
  - fade out 
@@ -552,5 +543,3 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     </div>
 </div>
 ```
-
-55. animateする
