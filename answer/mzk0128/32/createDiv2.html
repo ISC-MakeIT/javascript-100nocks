@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>32.createDiv2</title>
+    <style>
+        #main, #main2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 3px;
+            background-color: rgb(112, 216, 138);
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            margin: 3px;
+            background-color: rgb(216, 112, 112);
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="button" onclick="createDiv(this)" id="green" value="createDiv">
+    <div id="main"></div>
+    <input type="button" onclick="createDiv(this)" id="red" value="createDiv2">
+    <div id="main2"></div>
+    <script>
+        function createDiv(input) {
+            console.log (input);
+            if (input.id == 'green') {
+            main.appendChild(document.createElement('div')).className = 'box';
+            } else if (input.id == 'red') {
+            main2.appendChild(document.createElement('div')).className = 'box2';
+            }
+        }
+    </script>
+</body>
+</html>
