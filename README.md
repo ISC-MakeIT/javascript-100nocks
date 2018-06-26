@@ -376,16 +376,18 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## wTime
     現在の時刻を取得して出力してください。画面は自動で更新するように
 
-
+    ![wTime](./img/wTime.gif)
 
 
 1. ## randomBgColor
     ボタンを押すと背景色がランダムに変わるwebページを作成してください
 
-
+    ![randomBgColor](./img/randomBgColor.gif)
 
 1. ## toBin
     テキストフォームから入力された10進数を2進数にして出力してください
+
+
 
 
 1. ## toHex
