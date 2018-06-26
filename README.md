@@ -382,7 +382,6 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## randomBgColor
     ボタンを押すと背景色がランダムに変わるwebページを作成してください
 
-    ![randomBgColor](./img/randomBgColor.gif)
 
 1. ## toBin
     テキストフォームから入力された10進数を2進数にして出力してください
