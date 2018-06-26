@@ -167,8 +167,8 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## rensouhairetu
-    連想配列に値を1つ追加し、配列内のすべてのkeyとvalueを出力してください
-    連想配列: `ary={'color':'red','size':'100'}`
+    連想配列に値を1つ追加し、配列内のすべてのkeyとvalueを出力してください  
+    連想配列: `ary={'color':'red','size':'100'}`  
     追加する要素: `{'count':'5'}`
     ```
     keyは: color valueは: red
@@ -198,7 +198,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## wather
     配列aryの内容をランダムに出力するプログラムを作成してください。  
-    配列ary `ary=['晴れ','雨','曇り','槍',]`  
+    配列ary `ary=['晴れ','雨','曇り','槍']`  
     e.g.出力
     ```
     今日の天気は 槍 です
@@ -224,9 +224,9 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     暗号のルール: 各数字の後ろに2つ余計な数字を追加する  
     例
     ```js
-    const word='123';
+    var raw='123';
     ～処理～
-    console.log(word); //=>198276354
+    console.log(raw); //=>198276354
     ```
 
     平文はなんでもいいですが例として
@@ -238,11 +238,11 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## decrypto1
-    暗号化した変数`word`から不要な文字を削除して出力するプログラムを作成してください  
+    暗号化した変数`crypto`から不要な文字を削除して出力するプログラムを作成してください  
     hint: 暗号のルールは３文字おき
 
     ```
-    const word='やくこみがんきいばていんるよは'
+    const crypto='やくこみがんきいばていんるよは'
     ```
 
 
@@ -283,16 +283,18 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     formタグを使って個人情報送信フォームを作ってください。完成後submitボタンを押して、URLを確認して下さい。入力された情報がURLに正しく追記されているか確認して下さい。  
     フォームの仕様
     ```
-    名前: (type="text") 必須項目
+    名前: (type="text") 必須項目にすること
     Eメール: (type="email") 
     パスワード: (type="password")
     年齢: (selectタグとoptionタグ) 0~200歳まで選べること
     性別: (type="radio") labelタグも使用すること
     送信ボタン(type="submit")
     formタグの属性にmethod="get"を追加すること
-    必須項目が入力されていない場合、入力を促すような仕組みにすること()
+    必須項目が入力されていない場合、入力を促すような仕組みにすること
     ```
 
+    
+    ![form](./img/form.gif)
 
 
 
@@ -306,6 +308,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     設置したスライダーを調整することでmarqueeタグの速度を調整できるようにしてください。
     スライダーは`<input type="range">`で作成できます
 
+    ![slider](./img/slider.gif)
 
 
 
@@ -347,16 +350,18 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## createDiv
-    100px四方のdivを生成するボタンを作ってください。  
-    仕様
-    ```
-    色は緑
-    自動に画面端で折り返すようにする
-    ```
+
+    準備中
+
+    ![construction](./img/construction.jpg)
+
 
 
 1. ## createDiv2
-    29 createDivに機能を追加します。div生成領域の下に新たなボタンを設置し赤い色のdivを生成できるようにしてください
+
+    準備中
+
+    ![construction](./img/construction.jpg)
 
 
 
@@ -365,23 +370,24 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## 3sec
     3秒後にalert()を実行するボタンを作ってください
 
-
+    ![3sec](./img/3sec.gif)
 
 
 1. ## wTime
     現在の時刻を取得して出力してください。画面は自動で更新するように
 
-
+    ![wTime](./img/wTime.gif)
 
 
 1. ## randomBgColor
     ボタンを押すと背景色がランダムに変わるwebページを作成してください
 
-
+    ![randomBgColor](./img/randomBgColor.gif)
 
 1. ## toBin
     テキストフォームから入力された10進数を2進数にして出力してください
 
+    
 
 1. ## toHex
     テキストフォームから入力された10進数を16進数にして出力してください
@@ -455,10 +461,5 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## selectImage
     removeImageを改造して画像の追加上限を3枚に増やして下さい。画像をクリックした場合、クリックした画像のみ消去されるようにしてください
-
-
-
-
-
 
 

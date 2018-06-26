@@ -9,15 +9,18 @@
 </head>
 
 <body>
+  <input id="sumSequence">
+  <button onclick="sumSequence()">wa</button>
+
   <script>
-    const word = 'やくこみがんきいばていんるよは'
-    let out = '';
-    for (let i = 1; i <= word.length; i++) {
-      if (0 === i % 3) {
-        out += word[i - 1];
+    function sumSequence() {
+      var sum = 0;
+      var x = document.getElementById("sumSequence").value;
+      for (var i = 1; i <= x; i++) {
+        sum += i;
       }
+      console.log(sum);
     }
-    console.log(out);
   </script>
 </body>
 

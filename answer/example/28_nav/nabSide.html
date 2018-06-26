@@ -31,21 +31,37 @@
 
     .nber a {
       text-align: center;
-      color: white;
       display: block;
-      text-decoration: none;
+      text-decoration-line: none;
       padding: 0 14px;
       min-width: 100px;
+    }
+
+    /* 
+** 4つの疑似クラスの順番に気をつけよう
+** 覚え方はLoVe HAte
+ */
+
+    .nber a:link {
+      color: white;
+    }
+
+    .nber a:visited {
+      color: white;
     }
 
     .nber a:hover {
       background-color: pink;
     }
+
+    .nber a:active {
+      color: yellow;
+    }
   </style>
 </head>
 
 <body>
-  <div class="nber">
+  <nav class="nber">
     <ul>
       <li>
         <a href="#">Top</a>
@@ -68,7 +84,7 @@
         <a href="#">PHP</a>
       </li>
     </ul>
-  </div>
+  </nav>
 </body>
 
 </html>
