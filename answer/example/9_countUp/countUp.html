@@ -17,12 +17,18 @@
     (function () {
       let e = document.getElementsByTagName('input')[0];
       e.addEventListener('click', function () {
-        this.nextElementSibling.textContent = countUp(this.nextElementSibling.textContent);
+        this.nextElementSibling.textContent = countUp();
       })
     })();
 
-    function countUp(n) {
-      return parseInt(n, 10) + 1;
+    let n = 0;
+
+    function countUp() {
+      n++;
+      if (0 === n % 3) {
+        return n + 'ぽよ'
+      }
+      return n;
     }
   </script>
 </body>

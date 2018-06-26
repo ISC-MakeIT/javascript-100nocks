@@ -224,9 +224,9 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     暗号のルール: 各数字の後ろに2つ余計な数字を追加する  
     例
     ```js
-    var word='123';
+    var raw='123';
     ～処理～
-    console.log(word); //=>198276354
+    console.log(raw); //=>198276354
     ```
 
     平文はなんでもいいですが例として
@@ -238,11 +238,11 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## decrypto1
-    暗号化した変数`word`から不要な文字を削除して出力するプログラムを作成してください  
+    暗号化した変数`crypto`から不要な文字を削除して出力するプログラムを作成してください  
     hint: 暗号のルールは３文字おき
 
     ```
-    const word='やくこみがんきいばていんるよは'
+    const crypto='やくこみがんきいばていんるよは'
     ```
 
 
@@ -283,14 +283,14 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     formタグを使って個人情報送信フォームを作ってください。完成後submitボタンを押して、URLを確認して下さい。入力された情報がURLに正しく追記されているか確認して下さい。  
     フォームの仕様
     ```
-    名前: (type="text") 必須項目
+    名前: (type="text") 必須項目にすること
     Eメール: (type="email") 
     パスワード: (type="password")
     年齢: (selectタグとoptionタグ) 0~200歳まで選べること
     性別: (type="radio") labelタグも使用すること
     送信ボタン(type="submit")
     formタグの属性にmethod="get"を追加すること
-    必須項目が入力されていない場合、入力を促すような仕組みにすること()
+    必須項目が入力されていない場合、入力を促すような仕組みにすること
     ```
 
     
@@ -308,7 +308,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     設置したスライダーを調整することでmarqueeタグの速度を調整できるようにしてください。
     スライダーは`<input type="range">`で作成できます
 
-
+    ![slider](./img/slider.gif)
 
 
 1. ## nav
@@ -358,8 +358,9 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## createDiv2
-    29 createDivに機能を追加します。div生成領域の下に新たなボタンを設置し赤い色のdivを生成できるようにしてください
+    準備中
 
+    ![constrution](./img/construction.jpg)
 
 
 
