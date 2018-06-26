@@ -350,16 +350,18 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## createDiv
-    100px四方のdivを生成するボタンを作ってください。  
-    仕様
-    ```
-    色は緑
-    自動に画面端で折り返すようにする
-    ```
+
+    準備中
+
+    ![construction](./img/construction.jpg)
+
 
 
 1. ## createDiv2
-    29 createDivに機能を追加します。div生成領域の下に新たなボタンを設置し赤い色のdivを生成できるようにしてください
+
+    準備中
+
+    ![construction](./img/construction.jpg)
 
 
 
