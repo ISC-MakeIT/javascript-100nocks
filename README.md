@@ -454,7 +454,6 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     hasImageを改造して、画像をクリックした時画像を消去してください。jQueryを使って実装してください
 
 
-
 1. ## selectImage
     removeImageを改造して画像の追加上限を3枚に増やして下さい。画像をクリックした場合、クリックした画像のみ消去されるようにしてください
 
@@ -463,6 +462,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     以下の問題では、CSSはbootstrapを利用して見ましょう。
     bootstrapは特定のクラスを与えるとすでに用意されたCSSを適用することができます。
     詳しくはwebで（https://getbootstrap.com/docs/4.0/getting-started/introduction/）
+
     ```html
         <!-- CSS only -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -482,64 +482,66 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"
         ></script>
-
     ```
 
 1. ## find関数, closest関数を利用してみよう
-  - wrapクラスのdivを用意し、`$(.wrap)`で取得したjQueryオブジェクトを変数wrapperに格納
-  - find関数で'link-container'の中のaタグを変数'anchor'に格納しそのhref属性を取得しconsoleに出力してください
+
+    - wrapクラスのdivを用意し、`$(.wrap)`で取得したjQueryオブジェクトを変数wrapperに格納
+    - find関数で'link-container'の中のaタグを変数'anchor'に格納しそのhref属性を取得しconsoleに出力してください
+
+        ```html
+        <div id="wrap">
+            <div class='link-container'>
+                <p class='link-text'>これはテキストだよ</p>
+                <a href="google.com">yahooo!!!</a>
+            </div>
+        </div>
+        ```
+
+1. ## click関数を使おう
+
+    - buttonをクリックしたらクラスを'btn-default' -> 'btn-warning'に変わる
+    - ’ボタンだよ’ -> '押せません'にテキストを変更
+    - ボタンを押せないようにする
 
     ```html
-    <div id="wrap">
-        <div class='link-container'>
-            <p class='link-text'>これはテキストだよ</p>
-            <a href="google.com">yahooo!!!</a>
+        <div class="container">
+            <button type="button" class="js-button-event btn btn-primary">
+                これはボタンだよ
+            </button>
+        </div>
+    ```
+1. ## fadeを使ってみよう
+ - fade in
+
+    'js-fade-in-button' を押したらboxクラスのhiddenになっているオブジェクトをfadeInする
+ - fade out 
+
+    現状で表示されているboxクラスのオブジェクトをfadeOutする
+
+    ```css
+    <style>
+        span { color:red; cursor:pointer; }
+        .container > div { margin:3px; width:80px; display:none;
+            height:80px; float:left; }
+        div#one { background:#f00; }
+        div#two { background:#0f0; }
+        div#three { background:#00f; }
+    </style>
+    ```
+
+    ```html
+    <div class="container mt-4">
+        <div id="one" class="box"></div>
+        <div id="two" class="box"></div>
+        <div id="three" class="box"></div>
+        <div class='d-flex flex-column'>
+        <button class='btn btn-lg btn-info js-fade-in-button'>
+            fadeIn
+        </button>
+        <button class='btn btn-lg btn-warning js-fadeout-button'>
+            FadeOut
+        </button>
         </div>
     </div>
     ```
-
-1. ## click関数を使おう
- - buttonをクリックしたらクラスを'btn-default' -> 'btn-warning'に変わる
- - ’ボタンだよ’ -> '押せません'にテキストを変更
- - ボタンを押せないようにする
-
- ```html
-    <div class="container">
-        <button type="button" class="js-button-event btn btn-primary">
-            これはボタンだよ
-        </button>
-    </div>
- ```
-
-1. ## fadeを使ってみよう
- - fade in 
-    'js-fade-in-button' を押したらboxクラスのhiddenになっているオブジェクトをfadeInする
- - fade out 
-    現状で表示されているboxクラスのオブジェクトをfadeOutする
-
-```css
-<style>
-    span { color:red; cursor:pointer; }
-    .container > div { margin:3px; width:80px; display:none;
-        height:80px; float:left; }
-    div#one { background:#f00; }
-    div#two { background:#0f0; }
-    div#three { background:#00f; }
-</style>
-```
-
-```html
-<div class="container mt-4">
-    <div id="one" class="box"></div>
-    <div id="two" class="box"></div>
-    <div id="three" class="box"></div>
-    <div class='d-flex flex-column'>
-    <button class='btn btn-lg btn-info js-fade-in-button'>
-        fadeIn
-    </button>
-    <button class='btn btn-lg btn-warning js-fadeout-button'>
-        FadeOut
-    </button>
-    </div>
-</div>
-```
