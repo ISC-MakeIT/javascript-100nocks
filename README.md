@@ -370,7 +370,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## 3sec
     3秒後にalert()を実行するボタンを作ってください
 
-
+    ![3sec](./img/3sec.gif)
 
 
 1. ## wTime
