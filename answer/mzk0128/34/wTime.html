@@ -13,6 +13,7 @@
         function set(num) {
             var ret;
             if (num < 10) {
+                num.toString();
                 ret = '0' + num;
             } else {
                 ret = num;
@@ -24,8 +25,8 @@
             let time = new Date();
             let hour = set(time.getHours());
             let minute = set(time.getMinutes());
-            let secon = set(time.getSeconds());
-            main.innerHTML = hour + ':' + minute + ':' + secon;
+            let second = set(time.getSeconds());
+            main.innerHTML = hour + ':' + minute + ':' + second;
         }
         setInterval ('timeGet()',0);
     
