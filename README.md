@@ -568,10 +568,10 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## Coming soon...
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
-1. ## loacl file
+1. ## local file
     ローカルファイルをインプットするために必要なhtml要素を書いてください。インプットできるファイルは、画像ファイルを指定してください。
 
-1. ## reading loacl file
+1. ## reading local file
     問題60の続きです。インプットしたファイルの情報をconsoleに出力してください
 
 1. ## display local file by base64
