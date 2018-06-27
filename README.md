@@ -368,13 +368,13 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## 3sec
     3秒後にalert()を実行するボタンを作ってください
 
-
+    ![3sec](./img/3sec.gif)
 
 
 1. ## wTime
-    現在の時刻を取得して出力してください。画面は自動で更新するように
+    現在の時刻を取得して出力してください。画面は自動で更新するように   
 
-
+    ![wTime](./img/wTime.gif)
 
 
 1. ## randomBgColor
