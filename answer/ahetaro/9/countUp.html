@@ -9,18 +9,18 @@
 </head>
 
 <body>
-    <p id="valuePuls">1</p>
-    <button onclick="valuePuls()">PULS(10)</button>
+    <p id="valuepuls">1</p>
+    <button onclick="valuePuls()">puls(10)</button>
     <script>
-        var puls = 0;
+        var tasu = 0;
 
-        function valuePuls() {
-            puls += 1;
-            if (puls % 3 == 0) {
-                document.getElementById("valuePuls").textContent = Puls + "<<水素の音ぉおお>>";
+        function valuepuls() {
+            tasu += 1;
+            if (tasu % 3 == 0) {
+                document.getElementById("valuepuls").textContent = tasu + "<<水素の音ぉおお>>";
                 console.log("ナベアツだと思った？")
             } else {
-                document.getElementById("valuePuls").textContent = Puls;
+                document.getElementById("valuepuls").textContent = tasu;
             }
 
         }
