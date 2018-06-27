@@ -513,10 +513,10 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
         </div>
     ```
 1. ## fadeを使ってみよう
- - fade in
+    - fade in
 
-    'js-fade-in-button' を押したらboxクラスのhiddenになっているオブジェクトをfadeInする
- - fade out 
+        'js-fade-in-button' を押したらboxクラスのhiddenになっているオブジェクトをfadeInする
+    - fade out 
 
     現状で表示されているboxクラスのオブジェクトをfadeOutする
 
@@ -548,33 +548,25 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ```
 
 1. ## Coming soon...
-    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
-    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
-    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
-    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
-    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
-    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
-    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## test
-    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
