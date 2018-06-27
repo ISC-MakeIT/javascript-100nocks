@@ -568,5 +568,37 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## Coming soon...
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
-1. ## test
+1. ## loacl file
+    ローカルファイルをインプットするために必要なhtml要素を書いてください。インプットできるファイルは、画像ファイルを指定してください。
+
+1. ## reading loacl file
+    問題60の続きです。インプットしたファイルの情報をconsoleに出力してください
+
+1. ## display local file by base64
+    問題61の続きです。
+    readAsDataURLというメソッドを使って、取り込んだ画像をブラウザに表示してください。
+
+1. ## display local file by blobURL
+    問題61の続きです。
+    createObjectURLというメソッドを使って、取り込んだ画像をブラウザに表示してください。
+
+1. ## file download
+    問題62,63の続きです。
+    アップロードしたファイルを、ブラウザからダウンロードできるようにしてください。
+    右クリックのメニューから画像を保存とは違います。
+    htmlの要素を使ってください。
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
