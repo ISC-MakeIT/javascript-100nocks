@@ -548,25 +548,33 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ```
 
 1. ## Coming soon...
+    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
+    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
+    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
+    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
+    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
+    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## Coming soon...
+    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## test
+    ご期待ください。
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
