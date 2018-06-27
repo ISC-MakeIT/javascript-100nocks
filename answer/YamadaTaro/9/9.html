@@ -9,17 +9,25 @@
 </head>
 
 <body>
-  <input id="sumSequence">
-  <button onclick="sumSequence()">wa</button>
 
+  <button id="btn" onclick="up()">UP</button>
+  <p id="out">0</p>
   <script>
-    function sumSequence() {
-      var sum = 0;
-      var x = document.getElementById("sumSequence").value;
-      for (var i = 1; i <= x; i++) {
-        sum += i;
+    count = 0;
+
+    function up() {
+      var n = parseInt(document.getElementById('out').innerText, 10);
+      if (0 === count % 3) {
+        console.log(1);
+        var e = document.getElementById('out');
+        e.innerHTML = count;
+        console.log(e);
+        e = count;
+      } else {
+        console.log(2);
+        document.getElementById('out').textContent = count;
       }
-      console.log(sum);
+      count++;
     }
   </script>
 </body>
