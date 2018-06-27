@@ -167,8 +167,8 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## rensouhairetu
-    連想配列に値を1つ追加し、配列内のすべてのkeyとvalueを出力してください  
-    連想配列: `ary={'color':'red','size':'100'}`  
+    連想配列に値を1つ追加し、配列内のすべてのkeyとvalueを出力してください
+    連想配列: `ary={'color':'red','size':'100'}`
     追加する要素: `{'count':'5'}`
     ```
     keyは: color valueは: red
@@ -311,7 +311,6 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ![slider](./img/slider.gif)
 
 
-
 1. ## nav
     横並びのナビゲーションバーを実装してください。    
     仕様
@@ -350,19 +349,18 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## createDiv
-
-    準備中
-
-    ![construction](./img/construction.jpg)
-
+    100px四方のdivを生成するボタンを作ってください。  
+    仕様
+    ```
+    色は緑
+    自動に画面端で折り返すようにする
+    ```
 
 
 1. ## createDiv2
-
     準備中
 
-    ![construction](./img/construction.jpg)
-
+    ![constrution](./img/construction.jpg)
 
 
 
@@ -370,23 +368,23 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## 3sec
     3秒後にalert()を実行するボタンを作ってください
 
-    ![3sec](./img/3sec.gif)
+
 
 
 1. ## wTime
     現在の時刻を取得して出力してください。画面は自動で更新するように
 
-    ![wTime](./img/wTime.gif)
+
 
 
 1. ## randomBgColor
     ボタンを押すと背景色がランダムに変わるwebページを作成してください
 
 
+
 1. ## toBin
     テキストフォームから入力された10進数を2進数にして出力してください
 
-    
 
 1. ## toHex
     テキストフォームから入力された10進数を16進数にして出力してください
@@ -457,13 +455,150 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     hasImageを改造して、画像をクリックした時画像を消去してください。jQueryを使って実装してください
 
 
-
 1. ## selectImage
     removeImageを改造して画像の追加上限を3枚に増やして下さい。画像をクリックした場合、クリックした画像のみ消去されるようにしてください
 
+    ----------------------------------------
 
+    以下の問題では、CSSはbootstrapを利用して見ましょう。
+    bootstrapは特定のクラスを与えるとすでに用意されたCSSを適用することができます。
+    詳しくはwebで（https://getbootstrap.com/docs/4.0/getting-started/introduction/）
 
+    ```html
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- JS, Popper.js, and jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+    ```
 
+1. ## find関数, closest関数を利用してみよう
 
+    - wrapクラスのdivを用意し、`$(.wrap)`で取得したjQueryオブジェクトを変数wrapperに格納
+    - find関数で'link-container'の中のaタグを変数'anchor'に格納しそのhref属性を取得しconsoleに出力してください
 
+        ```html
+        <div id="wrap">
+            <div class='link-container'>
+                <p class='link-text'>これはテキストだよ</p>
+                <a href="google.com">yahooo!!!</a>
+            </div>
+        </div>
+        ```
 
+1. ## click関数を使おう
+
+    - buttonをクリックしたらクラスを'btn-default' -> 'btn-warning'に変わる
+    - ’ボタンだよ’ -> '押せません'にテキストを変更
+    - ボタンを押せないようにする
+
+    ```html
+        <div class="container">
+            <button type="button" class="js-button-event btn btn-primary">
+                これはボタンだよ
+            </button>
+        </div>
+    ```
+1. ## fadeを使ってみよう
+    - fade in
+
+        'js-fade-in-button' を押したらboxクラスのhiddenになっているオブジェクトをfadeInする
+    - fade out 
+
+    現状で表示されているboxクラスのオブジェクトをfadeOutする
+
+    ```css
+    <style>
+        span { color:red; cursor:pointer; }
+        .container > div { margin:3px; width:80px; display:none;
+            height:80px; float:left; }
+        div#one { background:#f00; }
+        div#two { background:#0f0; }
+        div#three { background:#00f; }
+    </style>
+    ```
+
+    ```html
+    <div class="container mt-4">
+        <div id="one" class="box"></div>
+        <div id="two" class="box"></div>
+        <div id="three" class="box"></div>
+        <div class='d-flex flex-column'>
+        <button class='btn btn-lg btn-info js-fade-in-button'>
+            fadeIn
+        </button>
+        <button class='btn btn-lg btn-warning js-fadeout-button'>
+            FadeOut
+        </button>
+        </div>
+    </div>
+    ```
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## local file
+    ローカルファイルをインプットするために必要なhtml要素を書いてください。インプットできるファイルは、画像ファイルを指定してください。
+
+1. ## reading local file
+    問題60の続きです。インプットしたファイルのファイル名とファイルサイズをconsoleに出力してください。
+
+1. ## display local file by base64
+    問題61の続きです。
+    readAsDataURLというメソッドを使って、取り込んだ画像をブラウザに表示してください。
+
+1. ## display local file by blobURL
+    問題61の続きです。
+    createObjectURLというメソッドを使って、取り込んだ画像をブラウザに表示してください。
+
+1. ## file download
+    問題62,63の続きです。
+    アップロードしたファイルを、ブラウザからダウンロードできるようにしてください。
+    右クリックのメニューから画像を保存とは違います。
+    htmlの要素を使ってください。
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
