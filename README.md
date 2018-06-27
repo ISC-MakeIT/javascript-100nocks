@@ -167,13 +167,8 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## rensouhairetu
-<<<<<<< HEAD
-    連想配列に値を1つ追加し、配列内のすべてのkeyとvalueを出力してください  
-    連想配列: `ary={'color':'red','size':'100'}`  
-=======
     連想配列に値を1つ追加し、配列内のすべてのkeyとvalueを出力してください
     連想配列: `ary={'color':'red','size':'100'}`
->>>>>>> master
     追加する要素: `{'count':'5'}`
     ```
     keyは: color valueは: red
@@ -316,10 +311,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ![slider](./img/slider.gif)
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 1. ## nav
     横並びのナビゲーションバーを実装してください。    
     仕様
@@ -358,21 +350,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## createDiv
-<<<<<<< HEAD
 
-    準備中
-
-    ![construction](./img/construction.jpg)
-
-
-
-1. ## createDiv2
-
-    準備中
-
-    ![construction](./img/construction.jpg)
-
-=======
     100px四方のdivを生成するボタンを作ってください。  
     仕様
     ```
@@ -385,7 +363,6 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     準備中
 
     ![constrution](./img/construction.jpg)
->>>>>>> master
 
 
 
@@ -397,11 +374,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## wTime
-<<<<<<< HEAD
-    現在の時刻を取得して出力してください。画面は自動で更新するように
-=======
     現在の時刻を取得して出力してください。画面は自動で更新するように   
->>>>>>> master
 
     ![wTime](./img/wTime.gif)
 
@@ -409,19 +382,10 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## randomBgColor
     ボタンを押すと背景色がランダムに変わるwebページを作成してください
 
-<<<<<<< HEAD
-    ![randomBgColor](./img/randomBgColor.gif)
-=======
-
->>>>>>> master
 
 1. ## toBin
     テキストフォームから入力された10進数を2進数にして出力してください
 
-<<<<<<< HEAD
-    
-=======
->>>>>>> master
 
 1. ## toHex
     テキストフォームから入力された10進数を16進数にして出力してください
@@ -481,28 +445,13 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## addImageJq
-<<<<<<< HEAD
-    追加ボタンをクリックした時、画面に画像を1枚だけ追加してください。２回目以降は追加されないようにしてください。jQueryを使って実装してください。
-=======
     ボタンを押す事に画像が追加されるようにしてください。jQueryを使って実装してください
->>>>>>> master
 
 
 1. ## hasImage
     addImageJqを改造して、ボタンクリックした時画像がすでにある場合は追加しないようにしてください。jQueryを使って実装してください
 
 
-<<<<<<< HEAD
-1. ## removeImage
-    hasImageを改造して、画像をクリックした時画像を消去してください。jQueryを使って実装してください
-
-
-
-1. ## selectImage
-    removeImageを改造して画像の追加上限を3枚に増やして下さい。画像をクリックした場合、クリックした画像のみ消去されるようにしてください
-
-
-=======
 1. ## selectImage
     hasImageを改造して、画像の追加上限を3枚にして下さい。jQueryを使って実装してください
 
@@ -659,4 +608,3 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## Coming soon...
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
->>>>>>> master
