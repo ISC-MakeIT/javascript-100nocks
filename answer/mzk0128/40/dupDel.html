@@ -15,7 +15,7 @@
     <script>
         let ary = [];
         for (let i = 0; ary.length < 25; i++) { // 25個格納する
-            let num = Math.floor(Math.random() * 76); // 0~75までのランダムな数値を取得
+            let num = Math.floor(Math.random() * (75 + 1 - 1)) + 1; // 1~75までのランダムな数値を取得
             let flg = ary.some( function(value) {
                 return value === num;
             });
@@ -32,7 +32,7 @@
         });
         console.log(ary);
 
-        // 検索＆削除処理
+        // 検索＆削除処理(記憶力もゴミ)
         function del() {
             let numIn = parseInt(document.forms.dupDel.num.value);
             let kekka = ary.indexOf(numIn);
@@ -41,10 +41,11 @@
                     ary[l] = ary[l + 1];
                 };
                 ary.pop();
+                console.log(ary);
+                document.getElementById('kekka').innerHTML = ary;
+            } else if (kekka = -1) {
+                alert ("error: Can't deleted");
             };
-            console.log(ary);
-            console.log(kekka);
-            document.getElementById('kekka').innerHTML = ary;
         };
     </script>
 </body>
