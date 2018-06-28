@@ -15,7 +15,21 @@
     <script>
         function henkan() {
             let num = parseInt(document.forms.toHex.num.value);
+            /*
             let kekka = num.toString(16);
+            document.getElementById('kekka').innerHTML = kekka;
+            */
+            // チートじゃないほう
+            const numBox = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+            let numBox2 = [];
+            let kekka = '';
+            for (let i = 0; num >= 1; i++) {
+                numBox2[i] = parseInt(num % 16);
+                num = Math.floor(num / 16);
+            }
+            for (let j = 0; j < numBox2.length; j++) {
+                kekka = numBox[numBox2[j]] + kekka;
+            }
             document.getElementById('kekka').innerHTML = kekka;
         }
     </script>
