@@ -8,6 +8,6 @@ function output() {
     for (var i = 1; i < 4; i++) {
         str += ` , \'${array[i]}\'`
     }
-    str += ` ]`
+    str += ` ]`;
     document.getElementById("name").innerHTML = str;
 }
