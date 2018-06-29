@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>44.incrementHello</title>
+</head>
+<body>
+    <button>click!</button>
+    <p></p>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+    <script>
+        let cnt = 0;
+        $('button').click( function() {
+            cnt++;
+            $('p').text(cnt);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>43.jquery</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        #main {
+            color: white;
+            font-size: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p>Cosmos</p>
+        <button>change</button>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+    <script>
+        $("button").click( function() {
+            $("p").text("Chaos");
+        });
+    </script>
+</body>
+</html>
