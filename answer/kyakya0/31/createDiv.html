@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: #00ff00;
+            float: left;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" onclick="create()" value="createDiv">
+    <div id="boxMother"></div>
+
+    <script>
+        function create() {
+            let greenBox = document.createElement("div");
+            greenBox.className = "box";
+            document.getElementById("boxMother").appendChild(greenBox);
+        }
+    </script>
+</body>
+
+</html>
