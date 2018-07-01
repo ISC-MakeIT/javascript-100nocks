@@ -552,26 +552,102 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     </div>
     ```
 
-1. ## Coming soon...
-    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
-1. ## Coming soon...
-    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+1. ## ~59までの作業でTodoAppを作成してみよう
+    - ディレクトリのなかに以下のファイルを入れてね
 
-1. ## Coming soon...
-    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+    1. package.json
+    ```json
+    {
+        "private": true,
+        "dependencies": {
+            "director": "~1.2.2",
+            "handlebars": "~2.0.0",
+            "jquery": "~2.1.1",
+            "todomvc-app-css": "^2.1.0",
+            "todomvc-common": "~1.0.1"
+        }
+    }
+    ```
+    このファイルを作成したらコマンドラインから `npm install`を実行しましょう。
+    → node_modulesというフォルダが作成されることを確認して下さい。
+    (これは事前に用意したCSSを利用するためです。)
 
-1. ## Coming soon...
-    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+    また `index.html`を以下のように編集してください。
+    https://gist.github.com/fumihumi/b34decd2ca92da95e89342ddeb01a85f
 
-1. ## Coming soon...
-    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
-1. ## Coming soon...
-    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+1. ## 新規登録の画面からFormを送信しましょう。
+    formに送信ボタンを作成し、送信がおされたら入力されている文字を
+    ハッシュ形式でAlertするようにしてください。
+    形式は以下に準じるものとします
 
-1. ## Coming soon...
-    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+    ```javascript
+    {
+        text: `${入力された文字}`,
+        status: unchecked
+        created_at: 作成日時を 'yyyymmdd'の形式で,
+    }
+    ```
+
+    statusというものは
+     - unchecked
+     - done
+     - deleted
+
+     上記の三つの要素を含んでいます。最初は`unchecked`.
+     Todoが完了したらDoneに変化し、
+     Todoが削除されたらDeletedに変化します。
+     
+     また、alertにて表示を完了することができたら、
+     以下のようなFormatでHTMLに表示をしましょう。
+
+     ```html
+     <div class='content'>
+     	<span class='checked'> </spant>
+     	<p class='text'>
+			...........comming soon
+     </div>
+     
+     ```
+
+1. ## JavascriptでValidationをしましょう
+    入力された文字をHTMLとして出力する処理は完了しました。
+    しかしながら現状では空文字であってもTodoの新規作成が可能となっています。
+    formに文字が入力されていないときは新規登録ができないようにしてください。
+    このとき。無断で処理を中断するだけでなく、利用者にもなぜ新規登録ができなかったのか伝えて見ましょう。
+    その際、ユーザーフレンドリーとなるように心がけてください。
+
+	また。アプリケーションを作成する際にはセキュリティも意識しなければなりません。
+	クロスサイトスクリプティング、SQLインジェクションといったWebの脆弱性について調べ、それらを防ぐための仕組みを作成しましょう。
+    セキュリティ対策と行っても何をすれば良いのかわからない場合は相談してください。
+
+1. ## LocalStorageに保存しましょう
+	先の操作にてユーザがTodoとして登録するデータは nullではないこと、、安全であることが保証されましたね。
+	しかし現状ではブラウザを再読み込みしてしまうとデータが消えてしまいます。
+	サーバーを作成したいのですが、今回はサーバーを利用しない方法を使ってみようと思います。
+	サーバーの代用手段としてブラウザのLocalStorageを使って見ましょう。
+    LocalStorageがなんなのかわからない場合はしらべ、コメントアウトに補足情報として記載してください。
+	その後実際に、ユーザが入力したデータをLocalstrageに保存しましょう。	
+
+1. ## LocalStorageから読み出してみよう
+	ブラウザを表示したときにLocalstrageにデータがあればそのデータを表示するようにしましょう。
+
+1. ## TodoでState管理をしてみよう
+	ここまでで今回の作業としてはメモ帳としてのサービスができました。
+	それをさらに本題のTodoアプリに近づけるためにそれぞれのタスクにState管理をしてみましょう。
+	現状はすべてのTodoが作成されたばかりになっているのでなので
+    `status == unchecked`ですね。
+	TodoListの左にあるCheckboxをクリックしたらStatusをCheckedに変更してみましょう。
+	また。Todo一覧の上部にあるStatusのタブをくりっくしたらそのStatusだけが絞り込まれるようにしましょう。
+
+1. ## 削除ができるようにしよう
+	TodoListのStatusがCheckedでないタスクのみ削除可能です。
+	削除ボタンを押せるか押せないかの判断をし削除がおされたら該当Todoを削除しましょう。またLocalStorageからも削除しましょう。
+
+    これにてTodoアプリは終了です。まだまだ機能として不完全な箇所はPRにまとめて見てください！
+    お疲れ様でした！
+
 
 1. ## local file
     ローカルファイルをインプットするために必要なhtml要素を書いてください。インプットできるファイルは、画像ファイルを指定してください。
