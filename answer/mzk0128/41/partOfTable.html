@@ -9,7 +9,6 @@
         table {
             margin: 0 auto;
             border-collapse: collapse;
-            
         }
         td {
             width: 40px;
@@ -19,10 +18,10 @@
         }
     </style>
 </head>
-<body onload="table()">
+<body onload="createTable()">
     <table id="main" border="1"></table>
     <script>
-        let W = 5, H = 5, cell = [];
+        const W = 5, H = 5, cell = [];
         let ary = [], k = 0;
 
         // 格納する数値を生成
@@ -31,7 +30,7 @@
             let flg = ary.some( function(value) {
                 return value === num;
             });
-            if (flg !== true) {
+            if (flg == false) {
                 ary[i] = num;
             } else {
                 i--;
@@ -43,10 +42,9 @@
             return 0;
         });
 
-        // テーブルを生成して格納
-        function table() {
+        // テーブルを生成
+        function createTable() {
             let main = document.getElementById('main');
-            
             for (let i = 0; i < H; i++) { // マインスイーパーのパクり
                 cell[i] = [];
                 let tr = document.createElement('tr');
@@ -57,11 +55,16 @@
                     td.x = j;
                     cell[i][j] = td;
                     tr.appendChild(td);
-                    cell[i][j].innerText = ary[k];
-                    k++;
+                    numAppend(i,j);
                 }
                 main.appendChild(tr);
             }
+        }
+
+        // 数値を格納
+        function numAppend(i,j) {
+            cell[i][j].innerText = ary[k];
+            k++;
         }
     </script>
 </body>
