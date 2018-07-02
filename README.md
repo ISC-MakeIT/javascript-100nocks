@@ -413,7 +413,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## partOfTable
     25マスのテーブルを用意し、それぞれのマス目に1～75の数字を割り当ててください。数字は昇順で重複がないようにしてください
 
-    ![partOfTable](./img/partOfTable.png)
+    ![partOfTable](./img/partOfTable.PNG)
 
 1. ## whichPlace
     partOfTableで作ったマスをクリックした際にその場所に割り当てられた数をalertするようにしてください
