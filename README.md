@@ -605,5 +605,3 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## Coming soon...
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
-
-    </details>
