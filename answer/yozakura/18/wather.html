@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ary = ['晴れ', '雨', '曇り', '槍']
+
+        function ranAry() {
+            var num = Math.floor(Math.random() * ary.length)
+            document.getElementById("wather").value = innerText = "天気は" + ary[num] + "です";
+        }
+    </script>
+    <form>
+
+        <div style="display:inline-flex;">
+            <input type="button" value="表示" onclick="ranAry()">
+            <input type="text" id="wather" placeholder="天気表示">
+
+        </div>
+    </form>
+</body>
+
+</html>

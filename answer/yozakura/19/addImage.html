@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>問08</title>
+    <style>
+        .display {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="display" id="display">
+
+    </div>
+    <input type="button" onclick="add()" value="表示">
+    <div id="add" item-height="10%"></div>
+
+    <script>
+        function add() {
+            var img = document.createElement("img");
+            document.body.appendChild(img);
+            img.src = "hqdefault.jpg"
+
+        }
+    </script>
+</body>
+
+</html>
