@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="dex">
+    <input type="button" onclick="toHex()" value="１６進数へ">
+    <p id="hexContent"></p>
+
+    <script>
+        const hexContent = document.getElementById("hexContent");
+        function toHex() {
+            let dex = document.getElementById("dex").value;
+            dex = Number(dex);
+            hex = dex.toString(16);
+            hexContent.textContent = hex;
+            console.log("変換前　：" + dex);
+            console.log("変換結果：" + hex);
+        }
+    </script>
+</body>
+
+</html>
