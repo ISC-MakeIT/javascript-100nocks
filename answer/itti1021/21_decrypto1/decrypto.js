@@ -1,7 +1,7 @@
 const crypto = "やくこみがんきいばていんるよは";
-var str = "";
+let str = "";
 
-for (var i = 0; i < crypto.length; i++) {
+for (let i = 0; i < crypto.length; i++) {
     if ((i % 3 ) != 2) {
         str += crypto.charAt(i);
     }

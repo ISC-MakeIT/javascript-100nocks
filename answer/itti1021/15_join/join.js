@@ -1,6 +1,6 @@
-var ary = ["a", "b", "c", "d"];
+let ary = ["a", "b", "c", "d"];
 
 function output() {
-    var str = ary.join("");
+    let str = ary.join("");
     document.getElementById("name").innerHTML = str;
 }

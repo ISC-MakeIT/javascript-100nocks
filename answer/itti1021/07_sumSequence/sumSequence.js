@@ -1,6 +1,6 @@
 function sum() {
-    var n = document.getElementById("n").value;
-    var sum = 0;
+    let n = document.getElementById("n").value;
+    let sum = 0;
     for (i = 1; i <= n; i++) {
         sum = sum + i;
     }

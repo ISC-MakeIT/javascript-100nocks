@@ -1,7 +1,6 @@
-var ary1 = ["a", "b"];
-var ary2 = ["c", "d"];
-
-var array = ary1.concat(ary2);
+let ary1 = ["a", "b"];
+let ary2 = ["c", "d"];
+let array = ary1.concat(ary2);
 
 function output() {
     var str = `[ '${array[0]}'`;
