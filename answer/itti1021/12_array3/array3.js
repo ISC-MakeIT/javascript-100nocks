@@ -1,6 +1,6 @@
-var ary = [];
-var num = 1;
-var obj = {};
+let ary = [];
+let num = 1;
+let obj = {};
 
 function judging() {
     document.getElementById("ary").innerHTML = Array.isArray(ary);

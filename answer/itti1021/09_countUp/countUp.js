@@ -1,4 +1,4 @@
-var cnt = 0;
+let cnt = 0;
 
 function countUp() {
     cnt++;

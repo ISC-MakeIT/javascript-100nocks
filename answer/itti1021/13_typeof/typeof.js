@@ -1,7 +1,7 @@
-var num = 1;
-var zero = 0;
-var str = "1";
-var zs = "0";
+let num = 1;
+let zero = 0;
+let str = "1";
+let zs = "0";
 
 function judging() {
     document.getElementById("num").innerHTML = typeof(num);

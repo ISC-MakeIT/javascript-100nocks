@@ -1,4 +1,4 @@
-var times = 0;
+let times = 0;
 
 function add() {
     times++;
