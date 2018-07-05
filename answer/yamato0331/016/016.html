@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="rensouhairetu()">rensouhairetu(17)</button>
+    <script>
+        function rensouhairetu() {
+
+            var ary = {
+                'color': 'red',
+                'size': '100'
+            };
+            ary.count = '5';
+            console.log(ary);
+            console.log(ary.color);
+
+            Object.keys(ary).forEach(function(key) {
+                var val = this[key];
+                console.log("keyは: " + key, "値は: " + val);
+            });
+        }
+    </script>
+</body>
+
+</html>

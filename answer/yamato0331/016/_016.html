@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var persons = {
+            "Taro": "100",
+            "jirou": "200"
+        };
+        var a = persons[0];
+        Object.keys(persons).forEach(function(key) {
+            var value = persons[key];
+            console.log("keyは: " + key, "valueは: " + value);
+
+        });
+    </script>
+</body>
+
+</html>

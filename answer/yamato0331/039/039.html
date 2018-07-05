@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="duplicate()">配列政策</button>
+    <script>
+        function duplicate() {
+            var i = 0;
+            var array = [25, 31, 21, 6, 8, 71, 54, 32, 1, 75, 50, 60, 23, 44, 53, 72, 2, 19, 27, 26, 38, 67, 47, 63, 12];
+            /* while (i < 25) {
+                 array[i] = 0;
+                 i += 1;
+             }
+             i = 0;
+             var y = 0;
+             var num = Math.floor(Math.random() * 76);
+
+             while (y < 25) {
+                 while (i < 25 && array[i] != num) {
+                     i += 1;
+                 }
+                 if (i == 25) {
+                     array[y] = num;
+                     y += 1
+                 }
+                 num = Math.floor(Math.random() * array.length);
+                 i = 0;
+             } */
+            i = 0;
+            var kaisuu = [];
+            while (i < 25) {
+                kaisuu[i] = 25;
+                i += 1;
+            }
+            var y = 0;
+            i = 0;
+            while (i < 25) {
+                if (i == y) {
+                    y += 1;
+                }
+                while (y < 25) {
+                    if (array[i] < array[y + i]) {
+                        kaisuu[i] -= 1;
+                    } else {
+                        kaisuu[y + i] -= 1;
+                    }
+                    y += 1;
+                }
+                i += 1;
+            }
+            i = 0;
+            var sort = [];
+            while (i < 25) {
+                sort[i] = 0;
+                i += 1;
+            }
+            i = 0;
+            while (i < 25) {
+                sort[kaisuu[i]] = array[kaisuu[i]]
+                i += 1;
+            }
+            alert(sort);
+
+        }
+    </script>
+</body>
+
+</html>
