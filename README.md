@@ -265,9 +265,9 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## shadow
-    準備中
+    hover時box-shadowでハイライトするようにして下さい
 
-    ![construction](./img/construction.jpg)
+    ![shadow](./img/shadow.gif)
 
 
 
