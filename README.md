@@ -16,7 +16,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 <details>
 <summary>
 
-# `n.1～n.49`
+# `n.1~n.49`
 
 </summary>
 
@@ -478,38 +478,43 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 <details>
 <summary>
 
-# `n.50〜n.100`
+# `n.50~n.100`
 
 </summary>
-    ----------------------------------------
 
-    ## ・BootStrapを使ってみよう
+---
+
+## ・BootStrapを使ってみよう
 
 
-    以下の問題では、CSSはbootstrapを利用して見ましょう。
-    bootstrapは特定のクラスを与えるとすでに用意されたCSSを適用することができます。
-    詳しくはwebで（https://getbootstrap.com/docs/4.0/getting-started/introduction/）
+以下の問題では、CSSはbootstrapを利用して見ましょう。
+bootstrapは特定のクラスを与えるとすでに用意されたCSSを適用することができます。
+詳しくはwebで  
+## [Introduction · Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
-    ```html
-        <!-- CSS only -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- JS, Popper.js, and jQuery -->
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
-    ```
+
+
+```html
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+    </script>
+```
+
 
 50. ## find関数, closest関数を利用してみよう
 
@@ -594,7 +599,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## Coming soon...
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
-1. ## local file
+60. ## local file
     ローカルファイルをインプットするために必要なhtml要素を書いてください。インプットできるファイルは、画像ファイルを指定してください。
 
 1. ## reading local file
