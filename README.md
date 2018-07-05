@@ -619,4 +619,10 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 
+70. ## shake
+    ボタンを押して文字を揺らして下さい。CSSアニメーションを使って実装すること
+
+    ![shake](./img/shake.gif)
+
+
 </details>
