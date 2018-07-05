@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>new</title>
+
+    <style>
+        .mark {
+            background: orange;
+            color: #ffffff;
+            font-size: 10px;
+            margin: 15px;
+            padding: 4px 3px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>ポッポ</li>
+        <li>カイオーガ</li>
+        <li class="new">ゼラオラ</li>
+        <li>ガオガエン</li>
+    </ul>
+
+    <script>
+        const newContent = document.getElementsByClassName("new");
+        for (let i = 0; i < newContent.length; i++) {
+            let newMark = document.createElement("span");
+            newMark.className = "mark";
+            newMark.textContent = "NEW!";
+            newContent[i].appendChild(newMark);
+            console.log(newContent[i]);
+        }
+    </script>
+</body>
+
+</html>

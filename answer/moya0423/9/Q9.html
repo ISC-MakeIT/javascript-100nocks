@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="countup"></div>
+    <input type="button" value="カウントアップ" onclick="cu();">
+    <script>
+        var i = 1;
+
+        function cu() {
+            if (i % 3 == 0) {
+                document.getElementById("countup").innerHTML = i;
+                countup.style.color = "red"
+                i++;
+            } else {
+                document.getElementById("countup").innerHTML = i;
+                countup.style.color = "black"
+                i++;
+            }
+        }
+    </script>
+</body>
+
+</html>
