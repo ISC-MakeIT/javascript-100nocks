@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #table {
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" id="table"></table>
+
+    <script>
+        var table = document.getElementById("table");
+        var rundom = Math.floor(Math.random() * 75);
+        var ary = [rundom];
+        var soeji = 0;
+        var y = 0;
+        while (ary.length < 25) {
+            rundom = Math.floor(Math.random() * 75);
+            while (y < ary.length && ary[y] != rundom) {
+                y += 1;
+            };
+            if (y == ary.length) {
+                ary.push(rundom);
+            };
+            y = 0;
+        };
+        ary.sort(function(num1, num2) {
+            if (num1 > num2) {
+                return 1;
+            } else {
+                return -1;
+            }
+        });
+        for (var i = 0; i < 5; i++) {
+            var tr = document.createElement("tr");
+            for (var j = 0; j < 5; j++) {
+                var td = document.createElement("td");
+                td.innerHTML = ary[soeji];
+                soeji += 1;
+                td.addEventListener("click", function() {
+                    alert(this.innerHTML)
+                });
+                tr.appendChild(td);
+            };
+            table.appendChild(tr);
+        };
+    </script>
+</body>
+
+</html>
