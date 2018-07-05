@@ -10,8 +10,6 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 [※source treeを使った解答手順](https://qiita.com/ymzk-jp/private/50a912f8d15c5d380ddb)  
 
 ---
-<!-- <details><summary>問1〜問50</summary>
-</details> -->
 
 1. ## saisyo
 
@@ -413,7 +411,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## partOfTable
     25マスのテーブルを用意し、それぞれのマス目に1～75の数字を割り当ててください。数字は昇順で重複がないようにしてください
 
-
+    ![partOfTable](./img/partOfTable.PNG)
 
 1. ## whichPlace
     partOfTableで作ったマスをクリックした際にその場所に割り当てられた数をalertするようにしてください
