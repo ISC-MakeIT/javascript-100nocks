@@ -519,12 +519,12 @@ bootstrapは特定のクラスを与えるとすでに用意されたCSSを適�
 50. ## find関数, closest関数を利用してみよう
 
     - wrapクラスのdivを用意し、`$(.wrap)`で取得したjQueryオブジェクトを変数wrapperに格納
-    - find関数で'link-container'の中のaタグを変数'anchor'に格納しそのhref属性を取得しconsoleに出力してください
+    - find関数で'link-container'の中のaタグを変数'anchor'に格納しそのhref属性を取得しconsoleに出力してください
 
         ```html
         <div id="wrap">
-            <div class='link-container'>
-                <p class='link-text'>これはテキストだよ</p>
+            <div class='link-container'>
+                <p class='link-text'>これはテキストだよ</p>
                 <a href="google.com">yahooo!!!</a>
             </div>
         </div>
@@ -533,7 +533,7 @@ bootstrapは特定のクラスを与えるとすでに用意されたCSSを適�
 1. ## click関数を使おう
 
     - buttonをクリックしたらクラスを'btn-default' -> 'btn-warning'に変わる
-    - ’ボタンだよ’ -> '押せません'にテキストを変更
+    - ’ボタンだよ’ -> '押せません'にテキストを変更
     - ボタンを押せないようにする
 
     ```html
