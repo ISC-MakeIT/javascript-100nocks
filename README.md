@@ -12,7 +12,13 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 ---
 
-<details><summary>問1〜問49</summary>
+
+<details>
+<summary>
+
+# `n.1～n.49`
+
+</summary>
 
 
 1. ## saisyo
@@ -466,10 +472,15 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 </details>
 
+</br>
+
+
 <details>
-<summary>問50〜問100</summary>
+<summary>
 
+# `n.50〜n.100`
 
+</summary>
     ----------------------------------------
 
     ## ・BootStrapを使ってみよう
