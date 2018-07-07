@@ -9,7 +9,17 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 [※回答方法は解答手順](./answer/example/回答手順.md)  
 [※source treeを使った解答手順](https://qiita.com/ymzk-jp/private/50a912f8d15c5d380ddb)  
 
+
 ---
+
+
+<details>
+<summary>
+
+# `n.1~n.49`
+
+</summary>
+
 
 1. ## saisyo
 
@@ -261,9 +271,9 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## shadow
-    準備中
+    hover時box-shadowでハイライトするようにして下さい
 
-    ![construction](./img/construction.jpg)
+    ![shadow](./img/shadow.gif)
 
 
 
@@ -457,46 +467,64 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## removeImage
     selectImageを改造して、クリックした時クリックされた画像が消去されるようにしてください。jQueryを使って実装してください
 
-
-    ----------------------------------------
-
-    ## ・BootStrapを使ってみよう
+---
 
 
-    以下の問題では、CSSはbootstrapを利用して見ましょう。
-    bootstrapは特定のクラスを与えるとすでに用意されたCSSを適用することができます。
-    詳しくはwebで（https://getbootstrap.com/docs/4.0/getting-started/introduction/）
+</details>
 
-    ```html
-        <!-- CSS only -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- JS, Popper.js, and jQuery -->
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
-    ```
+</br>
 
-1. ## find関数, closest関数を利用してみよう
+
+<details>
+<summary>
+
+# `n.50~n.100`
+
+</summary>
+
+---
+
+## ・BootStrapを使ってみよう
+
+
+以下の問題では、CSSはbootstrapを利用して見ましょう。
+bootstrapは特定のクラスを与えるとすでに用意されたCSSを適用することができます。
+詳しくはwebで  
+## [Introduction · Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+
+
+```html
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+    </script>
+```
+
+
+50. ## find関数, closest関数を利用してみよう
 
     - wrapクラスのdivを用意し、`$(.wrap)`で取得したjQueryオブジェクトを変数wrapperに格納
-    - find関数で'link-container'の中のaタグを変数'anchor'に格納しそのhref属性を取得しconsoleに出力してください
+    - find関数で'link-container'の中のaタグを変数'anchor'に格納しそのhref属性を取得しconsoleに出力してください
 
         ```html
         <div id="wrap">
-            <div class='link-container'>
-                <p class='link-text'>これはテキストだよ</p>
+            <div class='link-container'>
+                <p class='link-text'>これはテキストだよ</p>
                 <a href="google.com">yahooo!!!</a>
             </div>
         </div>
@@ -505,7 +533,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## click関数を使おう
 
     - buttonをクリックしたらクラスを'btn-default' -> 'btn-warning'に変わる
-    - ’ボタンだよ’ -> '押せません'にテキストを変更
+    - ’ボタンだよ’ -> '押せません'にテキストを変更
     - ボタンを押せないようにする
 
     ```html
@@ -571,7 +599,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## Coming soon...
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
-1. ## local file
+60. ## local file
     ローカルファイルをインプットするために必要なhtml要素を書いてください。インプットできるファイルは、画像ファイルを指定してください。
 
 1. ## reading local file
@@ -605,3 +633,12 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## Coming soon...
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+
+70. ## shake
+    ボタンを押して文字を揺らして下さい。CSSアニメーションを使って実装すること
+
+    ![shake](./img/shake.gif)
+
+
+</details>

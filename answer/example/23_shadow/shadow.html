@@ -6,93 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css.map"></script>
   <style>
-    div.gallery {
-      width: 60%;
+    .main {
+      padding: 10px;
+      letter-spacing: -1em;
+      background-color: gray;
     }
 
-    div.gallery ul {
-      margin: 10 0;
-      padding: 0;
+    .box {
+      display: inline-block;
+      vertical-align: top;
+      height: 100px;
+      width: 100px;
+      cursor: pointer;
     }
 
-    div.gallery li {
-      float: left;
-      list-style: none;
-      margin: 10px;
+    .box:hover {
+      box-shadow: 0 0 18px #fff;
     }
 
-    div.gallery img {
-      width: 200px;
-      height: auto;
-      vertical-align: bottom;
+    .red {
+      background-color: red;
     }
 
-    div.gallery li:nth-child(3) img {
-      box-shadow: 5px 15px 15px -5px rgba(0, 0, 0, 0.8);
+    .green {
+      background-color: green;
     }
 
-    .gallery:after {
-      content: "";
-      display: block;
-      height: 0;
-      font-size: 0;
-      clear: both;
-      visibility: hidden;
-    }
-
-    .rotate img {
-      margin: 30 16px;
-      padding: 30 0px;
-      width: 400px;
-      transform: rotate(-5deg);
-      height: auto;
+    .blue {
+      background-color: blue;
     }
   </style>
 </head>
 
 <body>
-  <div class="gallery">
-    <ul>
-      <li>
-        <div class="photos">
-          <img src="../img/somari.jpg" alt="../img/somari">
-        </div>
-      </li>
-      <li>
-        <div class="photos">
-          <img src="../img/somari.jpg" alt="somari">
-        </div>
-      </li>
-      <li>
-        <div class="photos">
-          <img src="../img/somari.jpg" alt="somari">
-        </div>
-      </li>
-      <li>
-        <div class="photos">
-          <img src="../img/somari.jpg" alt="somari">
-        </div>
-      </li>
-      <li>
-        <div class="photos">
-          <img src="../img/somari.jpg" alt="somari">
-        </div>
-      </li>
-      <li>
-        <div class="photos">
-          <img src="../img/somari.jpg" alt="somari">
-        </div>
-      </li>
-    </ul>
+  <div class="main">
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
   </div>
-
-  <div class="rotate">
-    <img src="../img/somari.jpg" alt="somari">
-  </div>
-
 
 </body>
 
