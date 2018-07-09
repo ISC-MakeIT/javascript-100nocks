@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="dex">
+    <input type="button" onclick="toBin()" value="二進数へ">
+    <p id="binContent"></p>
+
+    <script>
+        const binContent = document.getElementById("binContent");
+        function toBin() {
+            let dex = document.getElementById("dex").value;
+            dex = Number(dex);
+            bin = dex.toString(2);
+            binContent.textContent = bin;
+            console.log("変換前　：" + dex);
+            console.log("変換結果：" + bin);
+        }
+    </script>
+</body>
+
+</html>
