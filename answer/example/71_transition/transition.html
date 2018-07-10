@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+        }
+
+        .box:target {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transform: rotate(90deg);
+        }
+
+        #base {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+        }
+
+        #base:target {
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p>
+            <a href="#base">click</a>
+            <a href="#">undo</a>
+        </p>
+        <div id="base">box</div>
+    </div>
+
+</body>
+
+</html>
