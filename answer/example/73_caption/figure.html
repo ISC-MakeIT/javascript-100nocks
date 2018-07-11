@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        figure {
+            position: relative;
+            overflow: hidden;
+            width: 300px;
+        }
+
+        figcaption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .6);
+            -webkit-transition: .3s;
+            transition: .3s;
+            opacity: 0;
+        }
+
+        figure:hover figcaption {
+            opacity: 1;
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <figure>
+        <img src="../img/somari.jpg" />
+        <figcaption>
+            <h3>Caption Title</h3>
+            <p>caption text here ...</p>
+        </figcaption>
+    </figure>
+</body>
+
+</html>
