@@ -625,4 +625,24 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ![shake](./img/shake.gif)
 
 
+1.  ## transition
+    CSSアニメーションを使って画面に表示したボックスを大きくしたり小さくできるように実装して下さい
+
+    ![transition](./img/transition.gif)
+
+
+1. ## fontawesome
+    Font AwesomeのCDNを利用して「twitter」「facebook」「instagram」のアイコンを画面に表示して下さい
+
+    [Font Awesome](https://fontawesome.com/icons?d=gallery)
+
+
+
+1. ## caption
+    CSSアニメーショを使ってアイコンをホバーした際に薄暗くなるようにして下さい
+
+    ![caption](./img/captioin.gif)
+
+
+
 </details>
