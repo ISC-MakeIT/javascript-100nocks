@@ -632,14 +632,14 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## fontawesome
-    Font AwesomeのCDNを利用して「twitter」「facebook」「instagram」のアイコンを画面に表示して下さい
+    Font AwesomeのCDNを利用して「twitter」「facebook」「instagram」のアイコンを画面に表示して下さい。
 
     [Font Awesome](https://fontawesome.com/icons?d=gallery)
 
 
 
 1. ## caption
-    CSSを使ってアイコンをホバーした際に薄暗くなるようにして下さい
+    CSSを使ってアイコンをホバーした際に背景が薄暗くなるようにして下さい
 
     ![caption](./img/captioin.gif)
 
@@ -648,6 +648,8 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## transition2
     ボタンホバー時ボタンをカタカタ動くようにして下さい。
+
+    ![animation2](./img/animation2.gif)
 
 
 </details>
