@@ -1,6 +1,7 @@
 # itumono
 node_modules/
 .vscode/
+.vs/
 settings.json
 secretnotes.md
 imports/lib/

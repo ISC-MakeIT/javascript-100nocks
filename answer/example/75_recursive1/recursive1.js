@@ -5,4 +5,4 @@ function factorialP(n = 0) {
         return n;
     }
 }
-console.log(factorialP());
+console.log(factorialP(10));
