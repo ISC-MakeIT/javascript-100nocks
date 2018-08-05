@@ -3,7 +3,7 @@ function addImage() {
     div.className = "image";
 
     let img = document.createElement("img");
-    img.src = "icon_1r_192.png";
+    img.src = "./../img/icon_1r_192.png";
     img.alt = "ボール";
 
     div.appendChild(img);
