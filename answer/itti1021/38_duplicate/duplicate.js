@@ -1,0 +1,1 @@
+const num = Math.floor(Math.random() * 75) + 1;
