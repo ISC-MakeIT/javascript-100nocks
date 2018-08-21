@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const crypto = 'やくこみがんきいばていんるよは';
+        // var array = crypto.split("");
+        // for( var i = 2; i < array.length; i += 3 ){
+        //     delete array[i];
+        // }
+        // const crypto2 = array.toString();
+        // console.log(crypto2);
+        let str = "";
+        for( var i = 0; i < crypto.length; i +=1){
+            if((i % 3) != 2){
+                str += crypto.charAt(i)
+            }
+        }
+        console.log(str);
+    </script>
+</body>
+</html>
