@@ -1,8 +1,8 @@
 const word = "114514";
-var ransuu = "";
+var randomnum = "";
 for (var i = 0; i < word.length; i++) {
     var num = Math.floor(Math.random() * 10);
-    var numm = Math.floor(Math.random() * 10);
-    ransuu += word[i] + num + numm;
+    var number = Math.floor(Math.random() * 10);
+    randomnum += word[i] + num + number;
 }
-console.log(ransuu);
+console.log(randomnum);

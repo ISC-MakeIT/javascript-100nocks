@@ -11,32 +11,32 @@
 <body>
     <form>
         <input type="text" id="delNum">
-        <input type="button" onclick="sakuzyo()" value="配列内から要素を削除する">
+        <input type="button" onclick="del()" value="配列内から要素を削除する">
     </form>
     <script>
         //ランダムに２５個格納
-        const HAIRETSU = [];
+        const ARRAY = [];
         for (let i = 0; i < 25;) {
-            let kekka = Math.floor(Math.random() * (75 - 1) + 1);
-            let kensaku = HAIRETSU.indexOf(kekka, 0);
-            if (kensaku == -1) {
-                HAIRETSU.push(kekka);
+            let result = Math.floor(Math.random() * (75 - 1) + 1);
+            let search = ARRAY.indexOf(result, 0);
+            if (search == -1) {
+                ARRAY.push(result);
                 i++
             }
             //格納したものを昇順にソート
         }
-        HAIRETSU.sort(function (a, b) {
+        ARRAY.sort(function (a, b) {
             if (a < b) return -1;
             if (a > b) return 1;
             return 0;
         })
-        document.write(HAIRETSU);
+        document.write(ARRAY);
 
         //入力された値を配列内から削除、表示
-        function sakuzyo() {
-            let syutoku = document.getElementById("delNum").value; 
-            let tansaku = HAIRETSU.indexOf(syutoku, 0); 
-            console.log(tansaku); //探索した値が全て-1になる　謎。
+        function del() {
+            let acquisition = document.getElementById("delNum").value; 
+            let investigation = ARRAY.indexOf(acquisition, 0); 
+            console.log(investigation); //探索した値が全て-1になる　謎。
         }
     </script>
 </body>

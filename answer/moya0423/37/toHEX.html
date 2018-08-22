@@ -10,16 +10,16 @@
 
 <body>
     <form>
-        <input type="text" value="" id="mae">
-        <input type="text" value="" id="ato">
-        <input type="button" value="Change" onclick="henkan()">
+        <input type="text" value="" id="front">
+        <input type="text" value="" id="back">
+        <input type="button" value="Change" onclick="change()">
     </form>
     <script>
-        function henkan(){
-            let ten = document.getElementById("mae").value;
-            let henkou = parseInt(ten,10).toString(16);
-            let sixteen = document.getElementById("ato");
-            sixteen.value = henkou;
+        function change(){
+            let ten = document.getElementById("front").value;
+            let change = parseInt(ten,10).toString(16);
+            let sixteen = document.getElementById("back");
+            sixteen.value = change;
         }
     </script>
 </body>

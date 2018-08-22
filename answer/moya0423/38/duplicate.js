@@ -1,10 +1,10 @@
-const HAIRETSU = [];
+const ARRAY = [];
 for (let i = 0; i < 25;) {
-    let kekka = Math.floor(Math.random() * (75 - 1) + 1);
-    let kensaku = HAIRETSU.indexOf(kekka, 0);
-    if (kensaku == -1) {
-        HAIRETSU.push(kekka);
+    let result = Math.floor(Math.random() * (75 - 1) + 1);
+    let search = ARRAY.indexOf(result, 0);
+    if (search == -1) {
+        ARRAY.push(result);
         i++
     }
 }
-console.log(HAIRETSU);
+console.log(ARRAY);
