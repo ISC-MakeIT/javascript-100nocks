@@ -7,14 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    
     <script>
-        const ary = [　'晴れ','雨','曇り','槍' ];
-        let weather = () => {
-        let weather2 = `今日の天気は${ary[Math.floor(Math.random()*ary.length)]}です`
-        console.log(weather2);
+        var raw ='114514';
+        let str = "";
+        for( var i = 0; i < raw.length; i++ ){
+            str += raw.charAt(i);
+            str += Math.floor( Math.random() * 10 ) ;
+            str += Math.floor( Math.random() * 10 ) ;
         };
-        weather()
+        console.log(str);
     </script>
 </body>
 </html>
