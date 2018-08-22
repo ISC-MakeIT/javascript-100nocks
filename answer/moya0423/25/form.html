@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get" action="">
+        name:
+        <br>
+        <input type="text" name="name" required>
+        <br> email:
+        <br>
+        <input type="email" name="email" required>
+        <br> password:
+        <br>
+        <input type="password" name="password" required>
+        <br> age:
+        <br>
+        <select id="age" name="age" required></select>
+        <br> sex:
+        <br>
+        <input type="radio" value="Male" name="sex" required>Male
+        <input type="radio" value="Female" name="sex" required>Female
+
+        <input type="submit" value="送信">
+
+
+    </form>
+    <script>
+        createAge();
+
+        function createAge() {
+            let age = document.getElementById('age');
+            for (let i = 0; i < 201; i++) {
+                let option = document.createElement('option');
+                option.value = i.toString(10);
+                option.innerText = i.toString(10) + "歳";
+                age.appendChild(option);
+            }
+        }
+    </script>
+</body>
+
+</html>

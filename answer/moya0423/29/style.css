@@ -1,0 +1,27 @@
+.asyura{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+}
+
+.eringi{
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    top: 150px;
+    left: 200px;
+}
+
+h1{
+    position: absolute;
+    top: 280px;
+    left: 350px;
+}
+
+h2{
+    position: absolute;
+    top: 510px;
+    left: 450px;
+    font-family: monospace;
+    color: red;
+}

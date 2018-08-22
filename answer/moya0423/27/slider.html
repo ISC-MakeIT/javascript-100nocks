@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .font {
+            font-size: 3em;
+            width: 40%;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="font">
+        <marquee scrolldelay="30" truespeed id="marquee">癒し</marquee>
+        <input type="range" id="rang" max="100" min="1" value="50" oninput="tyousei()">
+    </div>
+
+    <script>
+        function tyousei() {
+            var speed = document.getElementById("rang");
+            var marquee = document.getElementById("marquee");
+            marquee.scrollDelay = speed.value;
+        }
+    </script>
+</body>
+
+</html>

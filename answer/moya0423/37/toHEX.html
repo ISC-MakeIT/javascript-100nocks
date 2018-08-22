@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" value="" id="mae">
+        <input type="text" value="" id="ato">
+        <input type="button" value="Change" onclick="henkan()">
+    </form>
+    <script>
+        function henkan(){
+            let ten = document.getElementById("mae").value;
+            let henkou = parseInt(ten,10).toString(16);
+            let sixteen = document.getElementById("ato");
+            sixteen.value = henkou;
+        }
+    </script>
+</body>
+
+</html>
