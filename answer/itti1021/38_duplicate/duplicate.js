@@ -8,7 +8,7 @@ for (let i = 1; i < 25; i++) {
     if (judgement) {
         i--;
     }
-    if (!judgement) {
+    else {
         array.push(num);
     }
 }
