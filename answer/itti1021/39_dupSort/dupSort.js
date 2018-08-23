@@ -7,7 +7,7 @@ while (array.length < 25) {
     }
     array.push(num);
 }
-let result = array.sort(function(a , b) {
+array.sort(function(a , b) {
     return a - b;
 });
-console.log(result);
+console.log(array);
