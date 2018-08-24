@@ -12,14 +12,14 @@
     <form>
         <input type="text" value="" id="front">
         <input type="text" value="" id="back">
-        <input type="button" value="Change" onclick="henkan()">
+        <input type="button" value="Change" onclick="change()">
     </form>
     <script>
-        function henkan(){
-            let ten = document.getElementById("front").value;
-            let change = parseInt(ten,10).toString(2);
-            let two = document.getElementById("back");
-            two.value = change;
+        function change(){
+            let decimal = document.getElementById("front").value;
+            let change = parseInt(decimal,10).toString(2);
+            let binary = document.getElementById("back");
+            binary.value = change;
         }
     </script>
 </body>
