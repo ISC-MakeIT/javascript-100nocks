@@ -1,4 +1,12 @@
-node_modules/*
+# itumono
+node_modules/
+.vscode/
+settings.json
+secretnotes.md
+imports/lib/
+public/fonts/
+README.md
+answer/example/*
 
 # Created by https://www.gitignore.io/api/macos,windows,visualstudiocode
 
@@ -57,6 +65,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-
-# End of https://www.gitignore.io/api/macos,windows,visualstudiocod
