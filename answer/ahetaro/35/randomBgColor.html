@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" onclick="change()" value="Change">
+    <script>
+        function change() {
+            let bgcolor = "#";
+            for (let i = 0; i < 6; i++) {
+                color = Math.floor(16 * Math.random());
+                color = color.toString(16);
+                bgcolor = bgcolor + color;
+            }
+            document.bgColor = bgcolor;
+        }
+    </script>
+</body>
+
+</html>
