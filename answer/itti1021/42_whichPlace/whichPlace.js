@@ -22,9 +22,9 @@ for (let i = 0, cellLen = tableData.rows.length; i < cellLen; i++) {
         let line = tableData.rows[j];
         let column = line.cells[i];
         column.innerHTML = insert;
+        column.addEventListener("click", function() {
+            alert(this.innerHTML);
+        }, false);
         cnt++;
     }
 }
-
-console.dir(tableData);
-console.log(tableData.rows[0].cells[0].innerText);
