@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>25.form</title>
+    <style>
+        table {
+            margin: 20px auto;
+            padding: 20px;
+            border: 3px solid rgb(182, 56, 56);
+            background-color: #fff;
+            border-radius: 20px;
+        }
+
+        td {
+            width: 130px;
+            padding: 3px;
+        }
+
+        input {
+            border: 1px solid rgb(182, 56, 56);
+            padding: 2px;
+        }
+
+        input[type=text], input[type=password] {
+            width: 150px;
+            height: 20px;
+        }
+
+        input[type=email] {
+            width: 220px;
+            height: 20px;
+        }
+
+        input[type=submit] {
+            width: 100px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        input:focus, select:focus {
+            outline: 0;
+            background-color: #ffd3c8;
+        }
+
+        select {
+            width: 150px;
+            height: 25px;
+            border: 1px solid rgb(182, 56, 56);
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td>名前 *</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Eメール</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>パスワード</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>年齢</td>
+                <td>
+                   <select name="pulldown" id="pulldown"></select>
+                </td>
+            </tr>
+            <tr>
+                <td>性別</td>
+                <td>
+                    <label><input type="radio" name="sex" value="男">男</label>
+                    <label><input type="radio" name="sex" value="女">女</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="送信"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        let pull = document.getElementById('pulldown');
+        for (let i = 0; i <= 200; i++) {
+        let option = document.createElement('option');
+        option.innerText = i;
+        pull.appendChild(option);
+        }
+    </script>
+</body>
+</html>

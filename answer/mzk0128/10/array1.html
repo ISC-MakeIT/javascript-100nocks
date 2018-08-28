@@ -10,9 +10,16 @@
     <script>
     const ary = ['a','b','c','d','e','f','g']; /* 再代入不可　*/
 
+    /*
     for (var i = 0; i < ary.length; i++){
         console.log(ary[i]);
     }
+    */
+
+    //その他の方法
+    ary.forEach(function(char, i){console.log(`${i}: ${char}`)}) //その１
+    for (char of ary) {console.log(char)} //その２
+    for (i in ary){console.log(ary[i])} //その３
     </script>
 </body>
 </html>

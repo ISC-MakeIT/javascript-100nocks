@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>41.partOfTable</title>
+    <style>
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="createTable()">
+    <table id="main" border="1"></table>
+    <script>
+        const W = 5, H = 5, cell = [];
+        let ary = [], k = 0;
+
+        // 格納する数値を生成
+        for (let i = 0; ary.length < 25; i++) { // 25個格納する
+            let num = Math.floor(Math.random() * 75) + 1; // 1~75までのランダムな数値を取得
+            let flg = ary.some( function(value) {
+                return value === num;
+            });
+            if (flg === false) {
+                ary[i] = num;
+            } else {
+                i--;
+            };
+        };
+        ary.sort( function(a, b) {
+            if (a < b) return -1;
+            if (a > b) return 1;
+            return 0;
+        });
+
+        // テーブルを生成
+        function createTable() {
+            let main = document.getElementById('main');
+            for (let i = 0; i < H; i++) { // マインスイーパーのパクり
+                cell[i] = [];
+                let tr = document.createElement('tr');
+                for (let j = 0; j < W; j++) { 
+                    let td = document.createElement('td');
+                    td.className = 'cell';
+                    td.y = i;
+                    td.x = j;
+                    cell[i][j] = td;
+                    tr.appendChild(td);
+                    numAppend(i,j);
+                }
+                main.appendChild(tr);
+            }
+        }
+
+        // 数値を格納
+        function numAppend(i,j) {
+            cell[i][j].innerText = ary[k];
+            k++;
+        }
+    </script>
+</body>
+</html>
