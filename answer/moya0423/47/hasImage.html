@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="button" class="add" value="追加">
+    </form>
+    <div class="pla"></div>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script>
+            $('.add').on('click', function(){
+                if ( $('.pla img').length === 0){
+                $('.pla').append('<img src ="../img/asyura.jpg" width ="100" height = "100">')
+            }else{
+                alert('これ以上は追加できません');
+            }});
+        </script>
+</body>
+</html>
