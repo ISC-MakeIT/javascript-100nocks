@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #chara{
+            font-size: 50px;
+            color : lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <input id="range1" type="range" value="25" min="1" max="50" step="1" oninput="changeSpeed()">  
+    <output id="output1">25</output>
+    <marquee scrollDelay="35" id="chara"  truespeed>癒し</marquee>
+    <script>
+        function changeSpeed() {
+            var speed = document.getElementById("range1");
+            var after = document.getElementById("chara");
+            after.scrollDelay = speed.value;
+            document.getElementById("output1").innerHTML = speed.value;
+        }
+    </script>
+</body>    
