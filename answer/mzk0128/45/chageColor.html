@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>45.chageColor</title>
+    <style>
+        #b {
+            background-color: #ffbbff;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">A</div>
+    <p>B</p>
+    <div id="c">C</div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+    <script>
+        $('#a').click( function(a) {
+            let target = $(a.target);
+            target.css("backgroundColor", "#bbffff");
+        });
+        $('p').click( function(b) {
+            $('p').attr('id', 'b');
+        });
+        $('#c').click( function() {
+            let target = $(this).attr('id');
+            $(function() {
+                if (target === 'c') {
+                    $('#c').css('backgroundColor', '#ffffbb');
+                }
+            });
+        }); // JQuery記述がややこしくて泣けます
+    </script>    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>35.randomBgColor</title>
+</head>
+<body id="main">
+    <input type="button" onclick="backColor()" value="randomBgColor">
+
+    <script>
+        function backColor() {
+            let colorR = Math.floor(Math.random() * 256);
+            let colorG = Math.floor(Math.random() * 256);
+            let colorB = Math.floor(Math.random() * 256);
+            main.style.backgroundColor = 'rgb(' + colorR + ',' + colorG + ',' + colorB + ')';
+        }
+    </script>
+    
+</body>
+</html>
