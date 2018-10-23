@@ -12,13 +12,13 @@
     <input type="text" id="sumsequence">
     <button onclick="sumsequence()">1~nの和(7)</button>
     <script>
-        function sumsequence() {
-            var sum = 0;
-            var n = document.getElementById("sumsequence").value;
-            for (var i = 1; i <= n; i++) {
+         sumsequence = () => {
+            let sum = 0;
+            const n = document.getElementById("sumsequence").value;
+            for (let i = 1; i <= n; i++) {
                 sum += i;
             }
-            console.log(sum);
+            alert(sum);
         }
     </script>
 </body>
