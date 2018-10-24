@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>31.createDiv</title>
+    <style>
+        #main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 3px;
+            background-color: rgb(112, 216, 138);
+        }
+    </style>
+</head>
+<body>
+    <input type="button" onclick="createDiv()" value="createDiv">
+    <div id="main"></div>
+    <script>
+        function createDiv() {
+            main.appendChild(document.createElement('div')).className = 'box';
+        }
+    </script>
+</body>
+</html>

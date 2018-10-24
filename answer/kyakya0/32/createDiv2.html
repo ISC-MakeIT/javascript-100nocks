@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .boxG,.boxR {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 5px;
+        }
+
+        .boxG {
+            background: #00ff00;
+        }
+
+        .boxR {
+            background: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" onclick="create()" value="createDiv">
+    <input type="button" onclick="createR()" value="createDiv2">
+    <div id="boxMother"></div>
+
+    <script>
+        function create() {
+            let greenBox = document.createElement("div");
+            greenBox.className = "boxG";
+            document.getElementById("boxMother").appendChild(greenBox);
+        }
+        function createR() {
+            let redBox = document.createElement("div");
+            redBox.className = "boxR";
+            document.getElementById("boxMother").appendChild(redBox);
+        }
+    </script>
+</body>
+
+</html>

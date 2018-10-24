@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="value1">
+    <input type="text" id="value2">
+    <input type="button" onclick="hikaku()" id="btn" value="hikaku">
+    <script>
+        function hikaku() {
+            var value1 = document.getElementById("value1");
+            var value2 = document.getElementById("value2");
+            console.log(value1.value, value2.value);
+            value1 = value1.value;
+            value2 = value2.value;
+            if (value1 === value2) {
+                console.log("true");
+            } else {
+                console.log("false");
+            }
+            console.log(document.getElementById("btn").value);
+
+        }
+    </script>
+
+</body>
+
+</html>

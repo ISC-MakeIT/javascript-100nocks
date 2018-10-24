@@ -1,0 +1,21 @@
+.box {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.box:hover {
+    box-shadow: 20px 20px 20px 20px white;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}

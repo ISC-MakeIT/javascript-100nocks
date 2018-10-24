@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="puls()">puls(10)</button>
+    <p id="value">1</p>
+    <script>
+        var tasu = 0;
+
+        function puls() {
+            tasu++;
+            if (0 == tasu % 3) {
+                var e = document.getElementById("value");
+                var s = tasu + "水素のおとぉ" + "<br>";
+                e.innerHTML = s;
+            } else {
+                document.getElementById("value").innerHTML = tasu;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
