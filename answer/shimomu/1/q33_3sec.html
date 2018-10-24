@@ -23,10 +23,10 @@
 <body>
     <input type="button" value="押す" onclick="push()">
     <script>
-        push = () => {
+        const push = () => {
             setTimeout("after()", 2700);
         };
-        after = () => {
+        const after = () => {
             alert("押したよ");
         };
     </script>

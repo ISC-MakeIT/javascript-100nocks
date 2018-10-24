@@ -11,7 +11,7 @@
 <body>
     <input type="button" value="ボタン" onclick="changebgcolor()">
     <script>
-        changebgcolor = () => {
+        const changebgcolor = () => {
             let str = "#";
             for (var i = 0; i < 3; i++) {
                 str += Math.floor(Math.random() * 17).toString(16);
