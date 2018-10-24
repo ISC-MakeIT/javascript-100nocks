@@ -13,14 +13,14 @@
     <button onclick="countUp()"> countUp </button>
     <script>
         let count = 1;
-        countUp = () => {
+        const countUp = () => {
             count += 1;
             if (count % 3 == 0) {
                 document.getElementById("count").textContent = count + "  ~世界のナベアツ風~";
             } else {
                 document.getElementById("count").textContent = count;
             }
-        }
+        };
     </script>
 
     </body>
