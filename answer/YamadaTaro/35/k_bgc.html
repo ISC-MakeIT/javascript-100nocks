@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>randomBgColor</title>
+</head>
+
+<body>
+    <input type="button" value="色を変える" onclick="changeBackgroundColor()">
+
+    <script>
+        function changeColorCode(i) {
+            i = i.toString(16);
+            i = ("00000" + i).slice(-6);
+            i = "#" + i;
+            return i;
+        }
+
+        function changeBackgroundColor() {
+            let i = Math.floor(Math.random() * 16777216);
+            i = changeColorCode(i);
+            console.log("Color Code = " + i);
+            document.body.style.backgroundColor = i;
+        }
+    </script>
+</body>
+
+</html>

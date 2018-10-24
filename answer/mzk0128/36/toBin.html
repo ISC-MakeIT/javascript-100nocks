@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>36.toBin</title>
+</head>
+<body>
+    <form action="" name="toBin" id="toBin">
+        <input type="text" id="num">
+        <input type="button" onclick="henkan()" value="２進数に変換">
+    </form>
+    <p id="kekka"></p>
+    <script>
+        function henkan() {
+            let num = parseInt(document.forms.toBin.num.value);
+            let kekka = num.toString(2); //ものすごいかんたんな方法があった
+            /*
+            let numBox = [];
+            let kekka = '';
+            for (let i = 0; num >= 1; i++) {
+                numBox[i] = num % 2;
+                num = Math.floor(num / 2);
+            }
+            for (let j = 0; j < numBox.length; j++) {
+                kekka = numBox[j] + kekka;
+            }
+            */
+            document.getElementById('kekka').innerHTML = kekka;
+        }
+    </script>
+</body>
+</html>

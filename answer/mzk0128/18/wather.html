@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>18.wather</title>
+</head>
+<body>
+    <input type="button" onclick="today()" value="今日の天気は？">
+    <div id="kekka"></div>
+    <script>
+        ary=['晴れ','雨','曇り','槍',];
+        
+        function today() {
+            var i = Math.floor( Math.random() * 4);
+            document.getElementById("kekka").innerText = "今日の天気は " + ary[i] + " です";
+        }
+
+    </script>
+</body>
+</html>

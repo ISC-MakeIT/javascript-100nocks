@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: relative;
+    width: 600px;
+    height: 380px;
+}
+
+.inside  {
+    position: absolute;
+    top: 95px;
+    left: 150px;
+}
+
+.a {
+    position: absolute;
+    top: 190px;
+    left: 280px;
+    color: red;
+    font-size: 20px;
+}
+
+.title {
+    position: absolute;
+    top: 370px;
+    left: 150px;
+    color: red;
+    font-size: 100px;
+    font-family: Monotype Corsiva;
+}
