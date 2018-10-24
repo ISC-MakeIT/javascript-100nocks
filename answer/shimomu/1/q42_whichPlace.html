@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        td,
+        th {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" frame="void" bordercolor="red">
+        <tr>
+            <td id="0"></td>
+            <td id="5"></td>
+            <td id="10"></td>
+            <td id="15"></td>
+            <td id="20"></td>
+        </tr>
+        <tr>
+            <td id="1"></td>
+            <td id="6"></td>
+            <td id="11"></td>
+            <td id="16"></td>
+            <td id="21"></td>
+        </tr>
+        <tr>
+            <td id="2"></td>
+            <td id="7"></td>
+            <td id="12"></td>
+            <td id="17"></td>
+            <td id="22"></td>
+        </tr>
+        <tr>
+            <td id="3"></td>
+            <td id="8"></td>
+            <td id="13"></td>
+            <td id="18"></td>
+            <td id="23"></td>
+        </tr>
+        <tr>
+            <td id="4"></td>
+            <td id="9"></td>
+            <td id="14"></td>
+            <td id="19"></td>
+            <td id="24"></td>
+        </tr>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script>
+            var ary = [];
+            var i = 0;
+            while (ary.length <= 24) {
+                ary[i] = 1 + Math.floor(Math.random() * 75);
+                i++;
+                ary = ary.filter(function (x, i, self) {
+                    return self.indexOf(x) === i;
+                })
+            };
+            ary.sort(function (a, b) {
+                if (a < b) return -1;
+                if (a > b) return 1;
+                return 0;
+            });
+            console.log(ary);
+
+            // $("#1").html(ary[1]);
+            for (var k = 0; k <= ary.length; k++) {
+                $(`#${k}`).html(ary[k]);
+            };
+
+            $('td').click(function(){
+                alert($(this).html());
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+*{
+    margin : 0;
+}
+#header{    
+    background-color:gray;
+    height: 24px;
+}
+#menu{
+    width: 100px;
+    text-align: center;
+    color: white;
+    float: left;
+}
+#menu:hover{
+    background-color: pink;
+}

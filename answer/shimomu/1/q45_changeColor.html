@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box_a">
+        <p>class a</p>
+    </div>
+    <div id="box_b">
+        <p>class b</p>
+    </div>
+    <div id="box_c">
+        <p>class c</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $("p:first").on("click", function () {
+            $("#box_a").css("background-color", "green");
+        });
+        $("#box_b").on("click", function () {
+            $("#box_b").attr("style", "background-color:yellow");
+        });
+        var style = '<link rel="stylesheet" href="q45_changeColor.css">';
+        $("#box_c").on("click", function () {
+            $("head style:last").after(style);
+        });
+    </script>
+</body>
+
+</html>

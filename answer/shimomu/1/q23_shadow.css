@@ -1,0 +1,23 @@
+.box{
+    height : 200px;
+    width : 200px;
+}
+
+
+#box1{
+    background-color: red;
+    float: left;
+}
+#box2{
+    background-color: green;
+    float: left;
+}
+#box3{
+    background-color: blue;
+    float: left;
+}
+
+.box:hover{
+    filter:alpha(opacity=80);
+    opacity:0.8;
+    }

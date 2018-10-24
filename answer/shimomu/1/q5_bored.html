@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #bored{
+            text-align : center;
+            margin-top : 25%;
+            font-size : 20px;
+            color : black;
+            }
+        #box{
+            height: 100%;
+            width : 100%;
+            background-size: contain ;
+            background-position: center;
+            background-repeat: no-repeat;
+        }        
+    </style>
+</head>
+<body>
+    <div id="box"><p id="bored">I'm so bored</p></div>       
+    <script>
+      document.getElementById("bored").onclick = () => {
+            bored.innerHTML="AWESOME!"
+            bored.style.color = 'red';
+            bored.style.fontSize = '128px';
+            document.getElementById("box").style.backgroundImage='url(img/nyanko.gif)';
+            // bored.style.backgroundImage = 'url(img/nyanko.gif)';
+        };  
+    </script>
+    
+</body>
+</html>
