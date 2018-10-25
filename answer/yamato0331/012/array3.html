@@ -11,17 +11,23 @@
 <body>
 
   <p>
-    <button onclick="array()">array3 (13)</button>
     <script>
-      const array = () => {
-        let scan = [1];
+      const arrayCheck = (scan) => {
         if (Array.isArray(scan) === true) {
-          alert(`${scan} true`);
+          console.log('true');
         } else {
-          alert(`${scan} falus`);
-
+          console.log('falus');
         }
       }
+
+      let example = [];
+      arrayCheck(example);
+
+      example = 1;
+      arrayCheck(example);
+
+      example = {};
+      arrayCheck(example);
     </script>
 </body>
 

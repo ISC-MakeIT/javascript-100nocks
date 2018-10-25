@@ -13,11 +13,21 @@
     <button onclick="angou()">暗号化</button>
     <div id="angouka"></div>
     <script>
+        const random = () => {
+            let left = Math.floor(Math.random() * 10); 
+            let right = Math.floor(Math.random() * 10); 
+            let randum = `${left}${right}`;
+            return randum
+        }
+
         const angou = () => {
-            let num = document.getElementById('hira').value;
-            let ary = num.split('');
-            ary = ary.join('00');
-            document.getElementById('angouka').textContent = ary;
+            let plaintext = document.getElementById('hira').value;
+            let ary = plaintext.split('');
+            let result = '';
+            for (let num in ary) {
+                result += `${num}${random()}`;
+            }
+            document.getElementById('angouka').textContent = result;
         }
     </script>
 

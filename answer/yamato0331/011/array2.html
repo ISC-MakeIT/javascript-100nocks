@@ -12,10 +12,9 @@
     <script>
         let count = 0;
         const array = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
-        for (let num in array) {
-            console.log(`${array[num]}${count}`);
-            count++
-        }
+        array.forEach((num, count) => {
+            console.log(`${num}${count}`);
+        })
     </script>
 </body>
 

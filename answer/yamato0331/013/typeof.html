@@ -9,12 +9,19 @@
 </head>
 
 <body>
-    <button onclick="typeScan()">typeof</button>
     <script>
-        const typeScan = () => {
-            const scan = 1;
-            alert(typeof(scan));
+        const typeScan = (scan) => {
+            console.log(typeof(scan));
         }
+
+        let example = [];
+        typeScan(example);
+
+        example = 1;
+        typeScan(example);
+
+        example = {};
+        typeScan(example);
     </script>
 </body>
 
