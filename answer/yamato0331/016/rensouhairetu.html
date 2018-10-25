@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="rensouhairetu()">rensouhairetu</button>
+    <script>
+        const rensouhairetu = () => {
+            let array = {
+                'color': 'red',
+                'size': '100'
+            };
+            array.count = '5';
+            for (let key in array) {
+                console.log(`keyは: ${key} valueは: ${array[key]}`);
+            };
+        }
+    </script>
+</body>
+
+</html>
