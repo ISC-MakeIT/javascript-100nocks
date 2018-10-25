@@ -13,11 +13,11 @@
     <button onclick="angou()">暗号化</button>
     <div id="angouka"></div>
     <script>
-        const random = () => {
+        const randomize = () => {
             let left = Math.floor(Math.random() * 10); 
             let right = Math.floor(Math.random() * 10); 
-            let randum = `${left}${right}`;
-            return randum
+            let randomize = `${left}${right}`;
+            return randomize
         }
 
         const angou = () => {
@@ -25,7 +25,7 @@
             let ary = plaintext.split('');
             let result = '';
             for (let num in ary) {
-                result += `${num}${random()}`;
+                result += `${ary[num]}${randomize()}`;
             }
             document.getElementById('angouka').textContent = result;
         }
