@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        select {
+            width: 160px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="1">
+        <tr>
+            <td>名前</td>
+            <td> <input type="text" id="name" required="required"></td>
+        </tr>
+        <tr>
+            <td>E-メール</td>
+            <td> <input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>パスワード</td>
+            <td> <input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td>年齢</td>
+            <td><select id="select"></select></td>
+        </tr>
+        <tr>
+            <td>性別</td>
+            <td><input type="radio" id="seibetu" value="男" name="name">男<input type="radio" id="seibetu" value="女" name="name">女</td>
+        </tr>
+        <tr>
+            <td>送信</td>
+            <td><input type="submit" id="submit"></td>
+        </tr>
+    </table>
+
+    <script>
+        var select1 = document.getElementById("select");
+        var i = 1;
+        while (i <= 200) {
+            var element = document.createElement("option");
+            element.value = i;
+            element.text = i;
+            select1.appendChild(element);
+            i += 1;
+        }
+    </script>
+</body>
+
+</html>

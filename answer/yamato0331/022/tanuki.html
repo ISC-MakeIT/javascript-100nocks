@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="tanuki">
+        ふわたたしが両手をひろげても、 お空はちっとも飛べないが、 飛べる小鳥はわたたしのように、 地面をはやくは走れない。 わたたしがからだをゆすっても、 ふきれいな音は出ないけど、 あの鳴る鈴はわたたしのように、 たたくさんなうたたは知らないよ。 鈴と、小鳥と、それからわたたし、 みんなふちがって、みんないい。
+    </p>
+    <button onclick="init()">判定</button>
+    <script>
+        const init = () => {
+            let text = document.getElementById("tanuki").textContent;
+            
+            text = text.split('');
+            let newText = '';
+            let flg = true;
+            for (let str in text) {
+                if (text[str] == 'た' && flg) {
+                    newText += text[str];
+                    flg = false;
+                } else {
+                    flg = true;
+                }
+                if (text[str] !== 'ふ' && text[str] !== '' && text[str] !== 'た') {
+                    newText += text[str];
+                };
+            };
+            alert(newText);
+        }
+    </script>
+</body>
+
+</html>
