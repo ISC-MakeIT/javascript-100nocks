@@ -13,14 +13,14 @@
     </select>
 
   <script>
-    let select1 = document.getElementById("select");
-    let i = 1;
-    while (i <= 200) {
+    let select = document.getElementById("select");
+    let cnt = 1;
+    while (cnt <= 200) {
       let element = document.createElement("option");
-      element.value = i;
-      element.text = i; //プルダウンに表示させたい文字
-      select1.appendChild(element);
-      i += 1;
+      element.value = cnt;
+      element.text = cnt; //プルダウンに表示させたい文字
+      select.appendChild(element);
+      cnt += 1;
     }
   </script>
 </body>

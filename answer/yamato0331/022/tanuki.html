@@ -16,22 +16,12 @@
     <script>
         const init = () => {
             let text = document.getElementById("tanuki").textContent;
-
-            text = text.split('');
-            let newText = '';
-            let flg = true;
-            for (let str in text) {
-                if (text[str] == 'た' && flg) {
-                    newText += text[str];
-                    flg = false;
-                } else {
-                    flg = true;
-                }
-                if (text[str] !== 'ふ' && text[str] !== '' && text[str] !== 'た') {
-                    newText += text[str];
-                };
+            let rezult = text;
+            for (let cnt = 0; cnt < text.length; cnt++) {
+                rezult = rezult.replace('たた', 'た');
+                rezult = rezult.replace('ふ', '');
             };
-            alert(newText);
+             alert(rezult);
         }
     </script>
 </body>
