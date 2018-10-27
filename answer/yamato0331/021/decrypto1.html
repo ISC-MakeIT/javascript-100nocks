@@ -10,16 +10,15 @@
 
 <body>
 <script>
-const crypto='やくこみがんきいばていんるよは';
+let crypto='やくこみがんきいばていんるよは';
 const array = crypto.split('');
 let composite = '';
 array.forEach((num, idx) => {
-    if ((indx + 1) % 3 == 0){
+    if ((idx + 1) % 3 == 0){
       composite += num;
     }
 });
 alert(composite);
-
 </script>
 </body>
 
