@@ -7,10 +7,38 @@
     , initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script>
+        $(function() {
+
+            $(".aaa").click(function() {
+
+                $("#bgBox").css("background-color", "green");
+            });
+
+            $(".bbb").click(function() {
+
+                $("#bgBox").css("background-color", "yellow");
+            });
+            $(".ccc").click(function() {
+                $("#bgBox").css("background-color", "red");
+            });
+        });
+    </script>
+    <div id="bgBox" style="background-color : #CCC; padding : 20px;">
+        <p class="aaa">class a</p>
+        <p class="bbb">class b</p>
+        <p class="ccc">class c</p>
+    </div>
 </body>
 
 </html>
