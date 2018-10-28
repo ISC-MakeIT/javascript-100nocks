@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .sss {
+            font-size: 100px;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="eee">
+        <input type="range" name="range" id="range" value="0" min="1" max="50" step="1" oninput="shift()">
+        <span id="val"></span>
+        <div class="aaa">
+            <marquee class="sss" scrolldelay="15" truespeed id="mq">癒し</marquee>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            document.getElementById('val').innerText = document.getElementById('range').value;
+        })();
+
+        function shift() {
+            let speed = document.getElementById('range');
+            let mq = document.getElementById('mq');
+            mq.scrollDelay = speed.value;
+            document.getElementById('val').innerText = range.value;
+        }
+    </script>
+
+</body>
+
+</html>

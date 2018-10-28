@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        CO = new Array(6);
+
+        CO[0] = "#ff0000";
+        CO[1] = "#0000ff";
+        CO[2] = "#ffff00";
+        CO[3] = "#c0c0c0";
+        CO[4] = "#f0e68c";
+        CO[5] = "#87cefa";
+
+        function henkou(sw) {
+            num = Math.floor(Math.random() * 6);
+            if (sw == 1) {
+                document.bgColor = CO[num];
+            }
+        }
+    </script>
+
+    <form>
+        <input type="button" value="押す" onclick="henkou(1)">
+    </form>
+</body>
+
+</html>
