@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>partOfTable</title>
+    <style>
+        table {
+            border-color: red;
+        }
+
+        td {
+            height: 50px;
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="randTable"></div>
+
+    <script>
+        const makeArray = () => {       //1~75の数字をランダムに格納した配列を返す（重複なし）
+            const numbers = [...Array(75).keys()].map(i => ++i);    //1~75の配列
+
+            const array = [];
+
+            for (let i = 0; i < 25; i++) {
+                let j = Math.floor(Math.random() * numbers.length);
+                array.push(numbers.splice(j, 1) - 0);
+            }
+            array.sort((a, b) => a - b);
+            return array;
+        }
+
+        const makeTable = (array) => {
+            let i = 0;
+            const table = document.createElement("table");
+            table.setAttribute("border", "1");
+            for (let j = 0; j < 5; j++) {
+                const tr = document.createElement("tr");
+                for (let k = 0; k < 5; k++) {
+                    td = document.createElement("td");
+                    td.setAttribute("class", "box");
+                    td.textContent = array[i];
+                    i = (i + 5) % 25;
+                    tr.appendChild(td);
+                }
+                i++;
+                table.appendChild(tr);
+            }
+            return table;
+        }
+
+        document.getElementById("randTable").appendChild(makeTable(makeArray()));
+
+        const place = document.getElementsByClassName("box");
+        for (let i = 0; i < place.length; i++) {
+            place[i].addEventListener("click", function () {
+                alert(this.textContent);
+            })
+        }
+    </script>
+</body>
+
+</html>
