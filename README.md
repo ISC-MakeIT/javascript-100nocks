@@ -9,9 +9,17 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 [※回答方法は解答手順](./answer/example/回答手順.md)  
 [※source treeを使った解答手順](https://qiita.com/ymzk-jp/private/50a912f8d15c5d380ddb)  
 
+
 ---
-<!-- <details><summary>問1〜問50</summary>
-</details> -->
+
+
+<details>
+<summary>
+
+# `n.1~n.49`
+
+</summary>
+
 
 1. ## saisyo
 
@@ -198,7 +206,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## wather
     配列aryの内容をランダムに出力するプログラムを作成してください。  
-    配列ary `ary=['晴れ','雨','曇り','槍',]`  
+    配列ary `ary=['晴れ','雨','曇り','槍']`  
     e.g.出力
     ```
     今日の天気は 槍 です
@@ -224,9 +232,9 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     暗号のルール: 各数字の後ろに2つ余計な数字を追加する  
     例
     ```js
-    const word='123';
+    var raw='123';
     ～処理～
-    console.log(word); //=>198276354
+    console.log(raw); //=>198276354
     ```
 
     平文はなんでもいいですが例として
@@ -238,11 +246,11 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## decrypto1
-    暗号化した変数`word`から不要な文字を削除して出力するプログラムを作成してください  
+    暗号化した変数`crypto`から不要な文字を削除して出力するプログラムを作成してください  
     hint: 暗号のルールは３文字おき
 
     ```
-    const word='やくこみがんきいばていんるよは'
+    const crypto='やくこみがんきいばていんるよは'
     ```
 
 
@@ -263,9 +271,9 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## shadow
-    準備中
+    hover時box-shadowでハイライトするようにして下さい
 
-    ![construction](./img/construction.jpg)
+    ![shadow](./img/shadow.gif)
 
 
 
@@ -283,16 +291,18 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     formタグを使って個人情報送信フォームを作ってください。完成後submitボタンを押して、URLを確認して下さい。入力された情報がURLに正しく追記されているか確認して下さい。  
     フォームの仕様
     ```
-    名前: (type="text") 必須項目
+    名前: (type="text") 必須項目にすること
     Eメール: (type="email") 
     パスワード: (type="password")
     年齢: (selectタグとoptionタグ) 0~200歳まで選べること
     性別: (type="radio") labelタグも使用すること
     送信ボタン(type="submit")
     formタグの属性にmethod="get"を追加すること
-    必須項目が入力されていない場合、入力を促すような仕組みにすること()
+    必須項目が入力されていない場合、入力を促すような仕組みにすること
     ```
 
+    
+    ![form](./img/form.gif)
 
 
 
@@ -306,7 +316,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     設置したスライダーを調整することでmarqueeタグの速度を調整できるようにしてください。
     スライダーは`<input type="range">`で作成できます
 
-
+    ![slider](./img/slider.gif)
 
 
 1. ## nav
@@ -356,8 +366,9 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## createDiv2
-    29 createDivに機能を追加します。div生成領域の下に新たなボタンを設置し赤い色のdivを生成できるようにしてください
+    準備中
 
+    ![constrution](./img/construction.jpg)
 
 
 
@@ -365,13 +376,13 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## 3sec
     3秒後にalert()を実行するボタンを作ってください
 
-
+    ![3sec](./img/3sec.gif)
 
 
 1. ## wTime
-    現在の時刻を取得して出力してください。画面は自動で更新するように
+    現在の時刻を取得して出力してください。画面は自動で更新するように   
 
-
+    ![wTime](./img/wTime.gif)
 
 
 1. ## randomBgColor
@@ -410,7 +421,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## partOfTable
     25マスのテーブルを用意し、それぞれのマス目に1～75の数字を割り当ててください。数字は昇順で重複がないようにしてください
 
-
+    ![partOfTable](./img/partOfTable.PNG)
 
 1. ## whichPlace
     partOfTableで作ったマスをクリックした際にその場所に割り当てられた数をalertするようにしてください
@@ -441,24 +452,193 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 
 1. ## addImageJq
-    追加ボタンをクリックした時、画面に画像を1枚だけ追加してください。２回目以降は追加されないようにしてください。jQueryを使って実装してください。
+    ボタンを押す事に画像が追加されるようにしてください。jQueryを使って実装してください
 
 
 1. ## hasImage
     addImageJqを改造して、ボタンクリックした時画像がすでにある場合は追加しないようにしてください。jQueryを使って実装してください
 
 
-1. ## removeImage
-    hasImageを改造して、画像をクリックした時画像を消去してください。jQueryを使って実装してください
-
-
-
 1. ## selectImage
-    removeImageを改造して画像の追加上限を3枚に増やして下さい。画像をクリックした場合、クリックした画像のみ消去されるようにしてください
+    hasImageを改造して、画像の追加上限を3枚にして下さい。jQueryを使って実装してください
 
 
 
+1. ## removeImage
+    selectImageを改造して、クリックした時クリックされた画像が消去されるようにしてください。jQueryを使って実装してください
+
+---
+
+
+</details>
+
+</br>
+
+
+<details>
+<summary>
+
+# `n.50~n.100`
+
+</summary>
+
+---
+
+## ・BootStrapを使ってみよう
+
+
+以下の問題では、CSSはbootstrapを利用して見ましょう。
+bootstrapは特定のクラスを与えるとすでに用意されたCSSを適用することができます。
+詳しくはwebで  
+## [Introduction · Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 
 
+```html
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+    </script>
+```
 
+
+50. ## find関数, closest関数を利用してみよう
+
+    - wrapクラスのdivを用意し、`$(.wrap)`で取得したjQueryオブジェクトを変数wrapperに格納
+    - find関数で'link-container'の中のaタグを変数'anchor'に格納しそのhref属性を取得しconsoleに出力してください
+
+        ```html
+        <div id="wrap">
+            <div class='link-container'>
+                <p class='link-text'>これはテキストだよ</p>
+                <a href="google.com">yahooo!!!</a>
+            </div>
+        </div>
+        ```
+
+1. ## click関数を使おう
+
+    - buttonをクリックしたらクラスを'btn-default' -> 'btn-warning'に変わる
+    - ’ボタンだよ’ -> '押せません'にテキストを変更
+    - ボタンを押せないようにする
+
+    ```html
+        <div class="container">
+            <button type="button" class="js-button-event btn btn-primary">
+                これはボタンだよ
+            </button>
+        </div>
+    ```
+1. ## fadeを使ってみよう
+    - fade in
+
+        'js-fade-in-button' を押したらboxクラスのhiddenになっているオブジェクトをfadeInする
+    - fade out 
+
+    現状で表示されているboxクラスのオブジェクトをfadeOutする
+
+    ```css
+    <style>
+        span { color:red; cursor:pointer; }
+        .container > div { margin:3px; width:80px; display:none;
+            height:80px; float:left; }
+        div#one { background:#f00; }
+        div#two { background:#0f0; }
+        div#three { background:#00f; }
+    </style>
+    ```
+
+    ```html
+    <div class="container mt-4">
+        <div id="one" class="box"></div>
+        <div id="two" class="box"></div>
+        <div id="three" class="box"></div>
+        <div class='d-flex flex-column'>
+        <button class='btn btn-lg btn-info js-fade-in-button'>
+            fadeIn
+        </button>
+        <button class='btn btn-lg btn-warning js-fadeout-button'>
+            FadeOut
+        </button>
+        </div>
+    </div>
+    ```
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+60. ## local file
+    ローカルファイルをインプットするために必要なhtml要素を書いてください。インプットできるファイルは、画像ファイルを指定してください。
+
+1. ## reading local file
+    問題60の続きです。インプットしたファイルのファイル名とファイルサイズをconsoleに出力してください。
+
+1. ## display local file by base64
+    問題61の続きです。
+    readAsDataURLというメソッドを使って、取り込んだ画像をブラウザに表示してください。
+
+1. ## display local file by blobURL
+    問題61の続きです。
+    createObjectURLというメソッドを使って、取り込んだ画像をブラウザに表示してください。
+
+1. ## file download
+    問題62,63の続きです。
+    アップロードしたファイルを、ブラウザからダウンロードできるようにしてください。
+    右クリックのメニューから画像を保存とは違います。
+    htmlの要素を使ってください。
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+1. ## Coming soon...
+    ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
+
+
+70. ## shake
+    ボタンを押して文字を揺らして下さい。CSSアニメーションを使って実装すること
+
+    ![shake](./img/shake.gif)
+
+
+</details>

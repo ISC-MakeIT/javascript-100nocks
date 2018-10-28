@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img{
+            width:100px;
+            height:50px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type=button value="add" onClick="addImage()">
+    <div id="box"></div>
+    <script>
+        addImage = () => {
+            // let image = document.createElement('div'); 
+            let catImg = document.createElement('img');
+            catImg.src = "img/somari.jpg";
+            let div = document.getElementById("box");
+            div.appendChild(catImg);
+        };
+    </script>
+</body>
+
+</html>

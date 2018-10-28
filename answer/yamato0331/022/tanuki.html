@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="tanuki">
+        ふわたたしが両手をひろげても、 お空はちっとも飛べないが、 飛べる小鳥はわたたしのように、 地面をはやくは走れない。 わたたしがからだをゆすっても、 ふきれいな音は出ないけど、 あの鳴る鈴はわたたしのように、 たたくさんなうたたは知らないよ。 鈴と、小鳥と、それからわたたし、 みんなふちがって、みんないい。
+    </p>
+    <button onclick="init()">判定</button>
+    <script>
+        const init = () => {
+            let text = document.getElementById("tanuki").textContent;
+            let result = text;
+            for (let cnt = 0; cnt < text.length; cnt++) {
+                result = result.replace('たた', 'た');
+                result = result.replace('ふ', '');
+            };
+             alert(result);
+        }
+    </script>
+</body>
+
+</html>

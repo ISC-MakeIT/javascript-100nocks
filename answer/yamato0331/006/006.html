@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="left">
+  <input type="text" id="right">
+  <button onclick="isSame()">比較(6)</button>
+  <script>
+    const isSame = () => {
+      let left = document.getElementById("left").value;
+      let right = document.getElementById("right").value;
+      if (left === right) {
+        alert("True");
+      } else {
+        alert("False");
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <select id="select">
+    </select>
+
+  <script>
+    let select = document.getElementById("select");
+    let cnt = 1;
+    while (cnt <= 200) {
+      let element = document.createElement("option");
+      element.value = cnt;
+      element.text = cnt; //プルダウンに表示させたい文字
+      select.appendChild(element);
+      cnt += 1;
+    }
+  </script>
+</body>
+
+</html>

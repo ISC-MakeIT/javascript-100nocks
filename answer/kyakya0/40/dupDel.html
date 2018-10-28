@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>dupDel</title>
+</head>
+
+<body>
+    <p>配列の内容</p>
+    <div id="array"></div>
+    <p>削除したい数値を選択してください</p>
+    <input type="number" id="num">
+    <input type="button" value="削除" id="delBtn" onclick="del(num.value)">
+    <div id="message"></div>
+
+    <script>
+        const delBtn = document.getElementById("delBtn");
+        const num = document.getElementById("num");
+
+        const del = (value) => {
+            let i = array.indexOf(value - 0);
+            if (i >= 0) {
+                array.splice(i, 1);
+                document.getElementById("message").textContent = "";
+            } else {
+                document.getElementById("message").textContent = "error: Can't deleted";
+            }
+            displayArray(array);
+        }
+
+        const displayArray = (array) => {
+            let txt = "";
+            for (let i = 0; i < array.length - 1; i++) {
+                txt += array[i] + ",";
+            }
+            txt += array[array.length - 1];
+            document.getElementById("array").textContent = txt;
+        }
+
+        const numbers = [...Array(75).keys()].map(i => ++i);    //1~75の配列
+        const array = [];
+
+        for (let i = 0; i < 25; i++) {
+            let j = Math.floor(Math.random() * numbers.length);
+            array.push(numbers.splice(j, 1) - 0);
+        }
+
+        array.sort((a, b) => a - b);
+
+        displayArray(array);
+    </script>
+</body>
+
+</html>

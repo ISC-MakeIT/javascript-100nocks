@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>22.tanuki</title>
+    <style>
+        div {
+            width: 500px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" name="tanuki" id="tanuki">
+        <textarea name="tanuki" id="tanukiTxt" cols="60" rows="10"></textarea><br>
+        <input type="button" onclick="t()" value="たぬき">
+    </form>
+    <div id="kekka"></div>
+    <script>
+        /* 修正前
+        function t() {
+            let tanukiTxt = document.forms.tanuki.tanukiTxt.value;
+            let len = tanukiTxt.match(/\r\n|\n/g); 
+            len = len.length
+            
+            for (let i = 0; i < len; i++){
+            tanukiTxt = tanukiTxt.replace('たた','た');
+            tanukiTxt = tanukiTxt.replace('ふ','');
+            document.getElementById('kekka').innerText = tanukiTxt;
+            }
+        }
+        */
+
+        function t() {
+            let tanukiTxt = document.forms.tanuki.tanukiTxt.value;
+            tanukiTxt = tanukiTxt.replace(/たた/g,'た');
+            tanukiTxt = tanukiTxt.replace(/ふ/g,'');
+            document.getElementById('kekka').innerText = tanukiTxt;
+        }
+        // 記述間違ってただけだった
+    </script>
+</body>
+</html>

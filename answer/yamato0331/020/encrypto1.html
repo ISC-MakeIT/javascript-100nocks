@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="hira">
+    <button onclick="angou()">暗号化</button>
+    <div id="angouka"></div>
+    <script>
+        const randomize = () => {
+            const left = Math.floor(Math.random() * 10); 
+            const right = Math.floor(Math.random() * 10); 
+            const randomize = `${left}${right}`;
+            return randomize
+        }
+
+        const angou = () => {
+            let plaintext = document.getElementById('hira').value;
+            let ary = plaintext.split('');
+            let result = '';
+            for (let num in ary) {
+                result += `${ary[num]}${randomize()}`;
+            }
+            document.getElementById('angouka').textContent = result;
+        }
+    </script>
+
+</body>
+
+</html>

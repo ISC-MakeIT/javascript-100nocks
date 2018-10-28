@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="text_box" value="">
+    <input type="button" value="重複チェック" onclick="getValue();">
+    <script>
+        var ary = [];
+        var i = 0;
+        while (ary.length <= 24) {
+            ary[i] = 1 + Math.floor(Math.random() * 75);
+            i++;
+            ary = ary.filter(function (x, i, self) {
+                return self.indexOf(x) === i;
+            })
+        };
+        ary.sort(function (a, b) {
+            if (a < b) return -1;
+            if (a > b) return 1;
+            return 0;
+        });
+        console.log(ary);
+
+        const getValue =()=> {
+            var result = document.getElementById("text_box").value;
+             var ary2 = ary.filter(function (value) {
+                return value != result;
+            })
+
+            if (ary2.length < ary.length) {
+                console.log(ary2);
+            } else {
+                console.log("error: Can't deleted");
+            }
+            ary = ary2;
+        };
+    </script>
+</body>
+
+</html>
