@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <marquee scrollAmount="6" id="marquee" >癒し</marquee>
+    <input type="range" min="1" max="60" value="6" id="range">
+    <div id="value">6</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+            $('input').on('input',function () {
+                const range = document.getElementById('range');
+                document.getElementById('value').textContent = range.value;
+                document.getElementById('marquee').scrollAmount = range.value;
+            })
+    </script>
+</body>
+</html>
