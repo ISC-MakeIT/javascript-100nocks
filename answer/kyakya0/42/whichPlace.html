@@ -38,6 +38,7 @@
             let i = 0;
             const table = document.createElement("table");
             table.setAttribute("border", "1");
+            table.setAttribute("class", "table1")
             for (let j = 0; j < 5; j++) {
                 const tr = document.createElement("tr");
                 for (let k = 0; k < 5; k++) {
@@ -55,12 +56,10 @@
 
         document.getElementById("randTable").appendChild(makeTable(makeArray()));
 
-        const place = document.getElementsByClassName("box");
-        for (let i = 0; i < place.length; i++) {
-            place[i].addEventListener("click", function () {
-                alert(this.textContent);
-            })
-        }
+        const place = document.getElementsByClassName("table1");
+        place[0].addEventListener("click", function () {
+            alert(event.target.textContent);
+        }, false);
     </script>
 </body>
 
