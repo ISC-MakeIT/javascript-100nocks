@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <P>現在の配列</P>
+    <div></div>
+    <input id="input">
+    <button onclick="dupDel()">実行</button>
+    <P>実行後の配列</P>
+    <div></div>
+<script>
+    let array = [];
+    while (array.length < 25) {
+        let random = Math.floor(Math.random() * 74) + 1;
+        array = array.filter((num) => {
+            return num !== random
+        });
+        array.push(random);
+    };
+    array.sort((left, right) => {
+        return left - right;
+    });
+    document.getElementsByTagName('div')[0].innerHTML = array;
+
+    const dupDel = () => {
+        const value = document.getElementById('input').value;
+        array = array.filter((num) => {
+            return num != value
+        });
+        document.getElementsByTagName('div')[1].innerHTML = array;
+    }
+</script>
+</body>
+</html>
