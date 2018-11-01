@@ -13,29 +13,22 @@
     let array = [];
     while (array.length < 26) {
         let random = Math.floor(Math.random() * 75) + 1;
-        array = array.filter((num) => {
-            return num !== random
-        });
+        array = array.filter(num => num !== random);
         array.push(random);
     };
-    array.sort((left, right) => {
-        return left - right;
-    });
+    array.sort((left, right) => left - right);
     
     const table = document.getElementById('table');
     let tr = document.createElement('tr');
     array.forEach((num, idx) => {
         let td = document.createElement('td');
         td.textContent = num;
+        td.addEventListener('click', () => alert(num));
         tr.appendChild(td);
         if ((idx + 1) % 5 == 0) {
             table.appendChild(tr);
             tr = document.createElement('tr');
         };
-    });
-    
-    $('td').click(function () {
-        alert(this.textContent);
     });
 </script>
 </body>

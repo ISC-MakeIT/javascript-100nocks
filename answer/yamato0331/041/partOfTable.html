@@ -12,14 +12,10 @@
     let array = [];
     while (array.length < 26) {
         let random = Math.floor(Math.random() * 75) + 1;
-        array = array.filter((num) => {
-            return num !== random
-        });
+        array = array.filter(num => num !== random);
         array.push(random);
     };
-    array.sort((left, right) => {
-        return left - right;
-    });
+    array.sort((left, right) => left - right);
     
     const table = document.getElementById('table');
     let tr = document.createElement('tr');

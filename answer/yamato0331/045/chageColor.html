@@ -20,14 +20,14 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        $(".div1").click(function() {
-            $(this).css("background-color", "#ff0000");
+        $(".div1").click(() => {
+            $(".div1").css("background-color", "#ff0000");
         });
-        $(".div2").on("click", function() {
-            $(this).css("background-color", "#ffff00");
+        $(".div2").on("click", () => {
+            $(".div2").css("background-color", "#ffff00");
         });
-        $(".div3").mousedown(function() {
-            $(this).css("background-color", "#ff00ff");
+        $(".div3").mousedown(() => {
+            $(".div3").css("background-color", "#ff00ff");
         });
     </script>
 </body>
