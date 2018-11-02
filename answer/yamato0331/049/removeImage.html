@@ -9,7 +9,6 @@
     img {
         height: 100px;
         width: 150px;
-        
     }
     </style>
 </head>
@@ -19,13 +18,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script>
         $('button').click(() => {
-            if ($('img').length < 3) {
-                const img = document.createElement('img');
-                img.src = 'unknown.JPG';
-                img.addEventListener('click', (e) => $(e.currentTarget).remove());
-                $('div').append(img);
-            };
+            if ($('img').length > 2) return; 
+            $('div').append('<img src = unknown.JPG>');
         });
+
+        $(document).on('click', 'img', e => $(e.currentTarget).remove());
     </script>
 </body>
 </html>
