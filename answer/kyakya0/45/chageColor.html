@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>chageColor</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">class a</div>
+    <div class="b">class b</div>
+    <div class="c">class c</div>
+
+    <script>
+        $(".a").click(
+            function () {
+                $(this).css("background-color", "green");
+            }
+        );
+
+        $(".b").click(
+            function () {
+                $(this).addClass("yellow");
+            }
+        );
+
+        $(".c").click(
+            function () {
+                $(this).toggleClass("red");
+            }
+        );
+    </script>
+</body>
+
+</html>

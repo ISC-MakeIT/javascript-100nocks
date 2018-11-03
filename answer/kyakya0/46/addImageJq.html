@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>addImageJq</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <input type="button" value="addImage!">
+    <div id="addImg"></div>
+    <script>
+        $("input[type='button']").click(() => {
+            $("#addImg").append("<img src='./Git-Icon-1788C.png'>");
+        });
+    </script>
+</body>
+
+</html>
