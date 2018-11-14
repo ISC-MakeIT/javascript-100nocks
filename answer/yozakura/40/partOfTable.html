@@ -9,9 +9,9 @@
 </head>
 <style>
     td {
+        border: 1px solid red;
         width: 100px;
         height: 100px;
-        border: 1px solid red;
     }
 </style>
 
@@ -77,13 +77,9 @@
                     let line = tableData.rows[j];
                     let column = line.cells[i];
                     column.innerHTML = insert;
-                    column.addEventListener("click", function() {
-                        alert(this.innerHTML);
-                    }, false);
                     cnt++;
                 }
             }
-
 
             console.dir(tableData);
             console.log(tableData.rows[0].cells[0].innerText);

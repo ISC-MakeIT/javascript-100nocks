@@ -9,23 +9,23 @@
 </head>
 
 <body>
+    <button>button</button>
+    <div id="main"></div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script>
-        $(function() {
-            $("button").click(function() {
-                let image = $('img').length;
-                if (image < 3) {
-                    $("#main").append('<img src ="5555.jpg"  class="pict">');
-                }
-            });
+        $('button').on('click', function() {
+            let image = $('img').length;
+            if (image < 3) {
+                $('div').append('<img src="5555.jpg">');
+            }
         });
-        $(".aaa").on("click", function() {
+
+        $('div').on('click', 'img', function() {
             $(this).remove();
         });
     </script>
-    <button>button</button>
-    <div id="main"></div>
+
 </body>
 
 </html>
