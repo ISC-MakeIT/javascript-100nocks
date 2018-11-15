@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function output() {
+            let select = document.getElementById("age");
+            for (let i = 0; i <= 200; i++) {
+                let option = document.createElement("option");
+                option.value = i;
+                option.innerText = i;
+                select.appendChild(option);
+            }
+        }
+    </script>
+
+
+    <dl>
+        <dt>名前</dt>
+        <dd><input type="text" name="name" required></dd>
+    </dl>
+    <dl>
+        <dt>メール</dt>
+        <dd><input type="email" name="email"></dd>
+    </dl>
+    <dl>
+        <dt>パスワード</dt>
+        <dd><input type="password" name="password"></dd>
+    </dl>
+    <dl>
+        <dt>年齢</dt>
+        <dd><select name="age" id="age"></select>才</dd>
+    </dl>
+    <dl>
+        <dt>性別</dt>
+        <dd>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">男</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="female">女</label>
+        </dd>
+    </dl>
+    <p>
+        <input type="submit" value="決定">
+    </p>
+
+</body>
+
+</html>
