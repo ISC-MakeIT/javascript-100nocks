@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const raw = "やくこみがんきいばていんるよは";
+        // 1201207810111314
+        let　 rescue = "";
+        for (i = 0; i < raw.length; i++) {
+            get = raw.charAt(i);
+            if (i % 3 === 0) {
+                i++;
+            } else if (i % 3 !== 0) {
+                let get = raw.charAt(i);
+                rescue = rescue + get;
+
+            }
+        }
+
+        console.log(rescue);
+    </script>
+
+</body>
+
+</html>
