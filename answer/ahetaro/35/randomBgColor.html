@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #color {
+            outline: none;
+            border-style: none;
+            border-radius: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="変色！" id="color" onclick="change()">
+</body>
+
+<script>
+    function change() {
+        var bodyResult = createColor();
+        document.bgColor = bodyResult;
+        var buttonResult = createColor();
+        document.getElementById("color").style.backgroundColor = buttonResult;
+    }
+
+    function createColor() {
+        var result = "#";
+        for (var i = 0; i < 6; i++) {
+            result += Math.floor(Math.random() * 15).toString(16);
+        }
+        return result;
+    }
+</script>
+
+</html>
