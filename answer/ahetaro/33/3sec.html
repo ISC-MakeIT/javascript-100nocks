@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #button_frame {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #button {
+            color: yellow;
+            background-color: rgb(235, 80, 163);
+            border-color: red;
+            border-radius: 100px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="button_frame">
+        <input type="button" value="押すなよ" id="button" onclick="setTimeout('attention()',3000)">
+    </div>
+    <script>
+        function attention() {
+            alert('ティティティティティティティティン');
+        }
+        setTimeout('attention()', 3000);
+    </script>
+</body>
+
+</html>
