@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" id="table" width="700" height="700">
+    </table>
+    <script>
+        let randomArray = [];
+        while (randomArray.length < 25) {
+            //ランダム１～７５ぶち込む 
+            let random_num = Math.floor(Math.random() * 75) + 1;
+            if (randomArray.indexOf(random_num) == -1) {
+                randomArray.push(random_num)
+            }
+            randomArray.sort(
+                function(a, b) {
+                    return (a < b ? -1 : 1);
+                }
+            )
+        }
+        console.log(randomArray);
+
+        let table = document.getElementById("table");
+        let tr = document.createElement("tr");
+        randomArray.forEach((num, idx) => {
+            let td = document.createElement("td")
+            td.textContent = num;
+            tr.appendChild(td);
+            if ((idx + 1) % 5 == 0) {
+                table.appendChild(tr);
+                tr = document.createElement("tr");
+            };
+        });
+    </script>
+</body>
+
+</html>
