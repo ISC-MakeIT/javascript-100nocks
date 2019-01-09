@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            /* background-color: yellow; */
+            position: relative;
+            width: 1000px;
+            height: 1000px;
+        }
+        
+        .red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+        }
+        
+        .green {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            left: 10%;
+            top: 0%
+        }
+        
+        .blue {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 20%;
+            top: 0%
+        }
+        
+        a.tach :hover {
+            box-shadow: 5px 5px 5px 5px white inset
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a class="tach">
+            <div class="red"></div>
+        </a>
+
+        <a class="tach">
+            <div class="green"></div>
+        </a>
+
+        <a class="tach">
+            <div class="blue"></div>
+        </a>
+    </div>
+
+
+</body>
+
+</html>
