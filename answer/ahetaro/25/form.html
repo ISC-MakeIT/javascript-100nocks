@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get" name="form" action="">
+        <p>name:</p>
+        <input type="name" name="simei" placeholder="yamadatarou">
+        <p>email</p>
+        <input type="email" placeholder="114514@gmail.com" name="email">
+        <p>password</p>
+        <input type="password" placeholder="password" name="password">
+        <p>age:</p>
+        <label><select id="select" name="age">
+        </select>year
+        </label>
+        <p>sex:</p>
+        <label>
+        <p>
+            <input type="radio" name="sex" value="Maile">Male
+            <input type="radio" name="sex" value="Female" >Female
+        </p>
+        </label>
+        <input type="submit">
+
+
+    </form>
+
+
+
+    <script>
+        'use strict'
+        formcheck()
+        let select = document.getElementById("select");
+        for (let i = 0; i < 201; i++) {
+            let insert = document.createElement("option");
+            insert.text = i;
+            select.appendChild(insert);
+        }
+
+        function formcheck() {
+            var flag = 0;
+            if (document.form.simei.value == "") {
+                flag = 1;
+
+            }
+            if (flag) {
+                window.alert('名前を入力してください。');
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>
