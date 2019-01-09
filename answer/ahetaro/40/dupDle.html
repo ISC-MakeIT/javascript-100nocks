@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="form">
+    <input type="button" value="診断" onclick="del()">
+    <script>
+        // 配列作る
+        let randomArray = [];
+        // 回す、２５個
+        while (randomArray.length < 25) {
+            // ランダム数字をrandomArrayにぶち込む
+            randomNum = Math.floor(Math.random() * 75) + 1;
+            // randomArray[]の中にrandomNumに入れた数字がなかったら代入
+            if (randomArray.indexOf(randomNum) === -1) {
+                randomArray.push(randomNum);
+            }
+        }
+        // console.log(randomArray);
+
+        randomArray.sort(
+            function(a, b) {
+                return (a < b ? -1 : 1);
+            }
+        );
+        console.log(randomArray);
+        // ---------------------------------------------
+        function del() {
+
+            let target = document.getElementById("form").value;
+            console.log(target);
+            const newRandomArray = randomArray.filter(function(n) {
+                return target != n;
+            });
+            if (randomArray.length === newRandomArray.length) {
+                console.log("can not deleted")
+            } else {
+                console.log(newRandomArray);
+                randomArray = newRandomArray;
+            }
+        }
+    </script>
+</body>
+
+</html>
