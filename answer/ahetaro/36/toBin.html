@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="math">
+        <input type="text" placeholder="114514">
+        <input type="button" value="エクスチェーーーーーンジ！！" onclick="exchenge()">
+    </form>
+    <div id="result"></div>
+    <script>
+        function exchenge() {
+            var suji = parseInt(document.math.elements[0].value);
+            console.log(suji);
+            document.getElementById("result").innerHTML = suji.toString(2);
+        }
+    </script>
+</body>
+
+
+</html>
