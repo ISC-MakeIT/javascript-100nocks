@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+
+
+</head>
+<input type="text" id="sumse"><button onclick="sumse()">1～ｎ</button>
+
+<body>
+
+    <script>
+        function sumse() {
+            var s = 0;
+            var n = document.getElementById("sumse").value;
+            for (var i = 1; i <= n; i++) {
+                s += i;
+            }
+            console.log(s);
+
+        }
+    </script>
+
+</body>
+
+</html>
