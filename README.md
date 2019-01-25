@@ -9,59 +9,35 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 [※回答方法は解答手順](./answer/example/回答手順.md)  
 [※source treeを使った解答手順](https://qiita.com/ymzk-jp/private/50a912f8d15c5d380ddb)  
 
-
 ---
 
 <details><summary>問1〜問49</summary>
 
-
 1. ## saisyo
-
-    HTMLファイルを作成し、MakeITと表示してください。文字はCSSを使って色を#20D0F0にしてください
-
-
+    HTMLファイルを作成し、MakeITと表示してください。文字はCSSを使って色を#20D0F0にしてください  
     ![saisyo](./img/saisyo.png)
 
-
-
-
 1. ## centerDiv
-    300px四方のdivを画面の上部中央に表示してください。色は赤、画面幅が変わっても中心に移動するようにして下さい
-
-
+    300px四方のdivを画面の上部中央に表示してください。色は赤、画面幅が変わっても中心に移動するようにして下さい  
     ![centerDiv](./img/centerDiv.gif)
 
-
 1. ## helloTable 
-    3x3の表を画面に表示して下さい。コンテンツはすべて「こんにちは」。一番左の列は縦に３つ結合してください
-
-
+    3x3の表を画面に表示して下さい。コンテンツはすべて「こんにちは」。一番左の列は縦に３つ結合してください   
     ![helloTable](./img/helloTable.png)
 
-
-
 1. ## console
-    console.logを使ってコンソールに「Hello JavaScript」と出力して下さい
-
-
+    console.logを使ってコンソールに「Hello JavaScript」と出力して下さい 
     ![console](./img/console.png)
 
-
 1. ## bored
-    画面中央に表示された「I'm so bored」の文字をクリックすると「AWESOME!」に書き換わるプログラムを作成してください。「AWESOME」は大きさ128px、色黒以外
-
+    画面中央に表示された「I'm so bored」の文字をクリックすると「AWESOME!」に書き換わるプログラムを作成してください。「AWESOME」は大きさ128px、色黒以外  
     ![bored](./img/bored.gif)
 
 1. ## isSame
-    ボタンを押すと2つのテキストフォームに入力された文字列を比較し、同一文字列であれば「True」、それ以外であれば「False」とアラート出力するプログラムを作成してください
-
-
+    ボタンを押すと2つのテキストフォームに入力された文字列を比較し、同一文字列であれば「True」、それ以外であれば「False」とアラート出力するプログラムを作成してください  
 
 1. ## sumSequence
-    1からnまでの和をコンソール出力するプログラムを作成してください。nはフォームに入力された値である。for文を使用すること
-
-
-
+    1からnまでの和をコンソール出力するプログラムを作成してください。nはフォームに入力された値である。for文を使用すること    
 
 1. ## anchor
     [Yahoo Japan](https://www.yahoo.co.jp/)に遷移するリンクを3つ表示してください  
@@ -69,18 +45,13 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     1つは新しいタブで開くように  
     1つはjavascriptのwindow.open()を使用して開くように
 
-
-
-
 1. ## countUp
-    ボタンを押すと画面に表示された数字が1つずつカウントアップされるプログラムを作成してください。カウントが3の倍数の時に表示が変わるようにしてください
-
-
+    ボタンを押すと画面に表示された数字が1つずつカウントアップされるプログラムを作成してください。カウントが3の倍数の時に表示が変わるようにしてください  
 
 1. ## array1
     配列内を順にコンソール出力してください  
     入力:  `const ary = ['a','b','c','d','e','f','g'];`  
-    出力: 
+    出力:   
     ```js
     a
     b
@@ -91,13 +62,10 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     g
     ```
 
-
-
-
 1. ## array2
     配列内を順にコンソール出力してください。出力の際に各要素のindex値を足して下さい  
     入力:  `const ary = ['a','b','c','d','e','f','g'];`  
-    出力: 
+    出力:   
     ```
     a0
     b1
@@ -108,55 +76,46 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     g6
     ```
 
-
 1. ## array3
-    宣言された変数が配列かどうか評価してください
-    入力
+    宣言された変数が配列かどうか評価してください    
+    入力    
     ```js
     var ary=[]
     var num=1
     var obj={}
     ```
-    出力
+    出力    
     ```js
     true
     false
     false
     ```
 
-
-
 1. ## typeof
-    以下の様に宣言された変数の型を評価して出力してください。  
-    入力: 
+    以下の様に宣言された変数の型を評価して出力してください。    
+    入力:   
     ```js
     var num=1; 
     var zero=0;
     var str='1';
     var zs='0';
     ```
-    出力
+    出力    
     ```js
     number
     number
     string
     string
     ```
-
-
-
 
 1. ## concat
     2つの配列を結合して出力してください  
     配列1 `ary1=['a','b']`  
     配列2 `ary2=['c','d']`  
-    出力
+    出力    
     ```js
     ['a','b','c','d']
     ```
-
-
-
 
 1. ## join
     15 concat で作った配列を出力してください。出力する際、配列内の要素を結合して出力してください  
@@ -166,42 +125,35 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     abcd
     ```
 
-
-
 1. ## rensouhairetu
-    連想配列に値を1つ追加し、配列内のすべてのkeyとvalueを出力してください
-    連想配列: `ary={'color':'red','size':'100'}`
-    追加する要素: `{'count':'5'}`
+    連想配列に値を1つ追加し、配列内のすべてのkeyとvalueを出力してください   
+    連想配列: `ary={'color':'red','size':'100'}`    
+    追加する要素: `{'count':'5'}`   
     ```
     keyは: color valueは: red
     keyは: size valueは: 100
     keyは: count valueは: 5
     ```
 
-
 1. ## add
-    自身が呼び出された数を出力する関数addを作成してください。
-    e.g.
+    自身が呼び出された数を出力する関数addを作成してください。   
+    e.g.    
     ```js
     add();
     add();
     add();
     ```
-    出力
+    出力    
     ```
     1
     2
     3
     ```
 
-
-
-
-
 1. ## wather
     配列aryの内容をランダムに出力するプログラムを作成してください。  
     配列ary `ary=['晴れ','雨','曇り','槍']`  
-    e.g.出力
+    e.g.出力    
     ```
     今日の天気は 槍 です
     今日の天気は 晴れ です
@@ -210,80 +162,51 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     今日の天気は 雨 です
     ```
 
-
-
 1. ## addImage
-    ボタンを押す事に画像が追加されるようにしてください
-
+    ボタンを押す事に画像が追加されるようにしてください  
     ![addImage](./img/addImage.gif)
-
-
-
-
 
 1. ## encrypto1
     以下の文字数列`word`を暗号化して出力するプログラムを作成してください  
     暗号のルール: 各数字の後ろに2つ余計な数字を追加する  
-    例
+    例  
     ```js
     var raw='123';
     ～処理～
     console.log(raw); //=>198276354
     ```
-
-    平文はなんでもいいですが例として
+    平文はなんでもいいですが例として    
     ```js
     114514
     ``` 
 
-
-
-
 1. ## decrypto1
     暗号化した変数`crypto`から不要な文字を削除して出力するプログラムを作成してください  
-    hint: 暗号のルールは３文字おき
-
+    hint: 暗号のルールは３文字おき  
+    hint: 回答は2種類あります   
     ```
     const crypto='やくこみがんきいばていんるよは'
     ```
 
-
-
-
-
 1. ## tanuki
     入力された文字列に含まれる「た」が連続した場合一文字に置換して、一つ以上の「ふ」が含まれた場合は「ふ」をすべて削除して出力するプログラムを作成してください。  
-    入力値
+    入力値  
     ```text
     ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。
-
     わたたしがからだをゆすっても、ふきれいな音は出ないけど、あの鳴る鈴はわたたしのように、たたくさんなうたたは知らないよ。
-
     鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。
     ```
 
-
-
 1. ## shadow
-    準備中
-
+    準備中  
     ![construction](./img/construction.jpg)
 
-
-
 1. ## pulldown
-    0から200まで選択できるプルダウンメニューを作ってください。javascript:document.createElement()を使うこと
-
-
-
-
-
-
-
+    0から200まで選択できるプルダウンメニューを作ってください。javascript:document.createElement()を使うこと 
 
 1. ## form
     formタグを使って個人情報送信フォームを作ってください。完成後submitボタンを押して、URLを確認して下さい。入力された情報がURLに正しく追記されているか確認して下さい。  
-    フォームの仕様
+    フォームの仕様  
     ```
     名前: (type="text") 必須項目にすること
     Eメール: (type="email") 
@@ -294,111 +217,109 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     formタグの属性にmethod="get"を追加すること
     必須項目が入力されていない場合、入力を促すような仕組みにすること
     ```
-
-    
     ![form](./img/form.gif)
 
+1. ## myForEach
+    以下のコードをforEachを使って書き直して下さい。     
+    ```js
+    var animals = ["micropig", "lion", "dog"];
+    var barks = ["oinkoink!!", "growwwl!!", "bowbow!!"]
+    for(let animal=0; animal<animals.length; animal++){
+        for(let bark=0; bark<barks.length; bark++){
+            console.log(animals[animal],barks[bark]);
+        }
+    }
+    ```
+    出力例
+    ```text
+    micropig oinkoink!!
+    micropig growwwl!!
+    micropig bowbow!!
+    lion oinkoink!!
+    lion growwwl!!
+    lion bowbow!!
+    dog oinkoink!!
+    dog growwwl!!
+    dog bowbow!!
+    ```
 
 
-1. ## marquee
-    `<marquee scrolldelay="50" truespeed>癒し</marquee>`を設置して下さい。癒されたら完了です
-
-
-
-
-1. ## slider
-    設置したスライダーを調整することでmarqueeタグの速度を調整できるようにしてください。
-    スライダーは`<input type="range">`で作成できます
-
-    ![slider](./img/slider.gif)
+1. ## myForEach2
+    以下のコードforEach、for..inを使わず書き直して下さい。
+    ```js
+    function sum(hash, result=0){
+        hash.forEach(function(element){
+            for(var key in element){
+                result+=element[key];
+            }
+        });
+        return result;
+    }
+    var subjects = [{'Japanese': 80}, {'Math': 90}, {'English': 100}];
+    console.log(sum(subjects));
+    ```
+    出力
+    ```text
+    270
+    ```
 
 
 1. ## nav
     横並びのナビゲーションバーを実装してください。    
-    仕様
+    仕様    
     ```
-    コンテンツはの6つ
-    マスオーバーした際に色が変わること
+    コンテンツはの6つ   
+    マスオーバーした際に色が変わること  
     ```
-
     ![nav](./img/nav.gif)
 
-
-
-
 1. ## onImage
-    画面に画像を表示し、その画像の上に一回り縮小させた同じ画像を重ねて表示、その縮小画像の上に「AAAA」と表示してください。一番大きな画像の外下側中央に画像のタイトルを設置してください。画像のタイトルだけかっこいいフォントを使ってください。
-
-
-
-
+    画面に画像を表示し、その画像の上に一回り縮小させた同じ画像を重ねて表示、その縮小画像の上に「AAAA」と表示してください。一番大きな画像の外下側中央に画像のタイトルを設置してください。画像のタイトルだけかっこいいフォントを使ってください。  
 
 1. ## new
     以下のhtmlでnewクラスがついているものだけコンテンツの末尾にnewがつくようにしてください  
-
     ```html
-      <ul>
+    <ul>
         <li>ポッポ</li>
         <li>カイオーガ</li>
         <li class="new">ゼラオラ</li>
         <li>ガオガエン</li>
-      </ul>
+    </ul>
     ```
     出力例  
     ![newContents](./img/new.png)
 
-
-
-
 1. ## createDiv
     100px四方のdivを生成するボタンを作ってください。  
-    仕様
+    仕様    
     ```
     色は緑
     自動に画面端で折り返すようにする
     ```
 
-
 1. ## createDiv2
-    準備中
-
+    準備中  
     ![constrution](./img/construction.jpg)
 
-
-
-
 1. ## 3sec
-    3秒後にalert()を実行するボタンを作ってください
-
+    3秒後にalert()を実行するボタンを作ってください  
     ![3sec](./img/3sec.gif)
-
 
 1. ## wTime
     現在の時刻を取得して出力してください。画面は自動で更新するように   
-
     ![wTime](./img/wTime.gif)
 
-
 1. ## randomBgColor
-    ボタンを押すと背景色がランダムに変わるwebページを作成してください
-
-
+    ボタンを押すと背景色がランダムに変わるwebページを作成してください   
 
 1. ## toBin
-    テキストフォームから入力された10進数を2進数にして出力してください
-
+    テキストフォームから入力された10進数を2進数にして出力してください   
 
 1. ## toHex
-    テキストフォームから入力された10進数を16進数にして出力してください
-
-
-
+    テキストフォームから入力された10進数を16進数にして出力してください  
 
 1. ## duplicate
-    1～75までのランダムな整数を重複なく25個格納した配列を出力するプログラムを作成して下さい。
-    数字が重複しないよう気をつけて下さい。
-
-
+    1～75までのランダムな整数を重複なく25個格納した配列を出力するプログラムを作成して下さい。数字が重複しないよう気をつけて下さい。 
 
 1. ## dupSort
     36 duplicate で作成した配列内を昇順でソートして下さい  
@@ -407,157 +328,112 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     出力  
     `ary=['3','5','6','10','25']`
 
-
 1. ## dupDel
-    テキストフォームから指定された数値が、37 dupSort で作成した配列内にある場合削除し、削除後配列の大きさを削除した分だけ縮小した配列を返すプログラムを作成して下さい。指定された数が見つからなかった場合は「error: Can't deleted」と出力して下さい
-
+    テキストフォームから指定された数値が、37 dupSort で作成した配列内にある場合削除し、削除後配列の大きさを削除した分だけ縮小した配列を返すプログラムを作成して下さい。指定された数が見つからなかった場合は「error: Can't deleted」と出力して下さい。 
 
 1. ## partOfTable
-    25マスのテーブルを用意し、それぞれのマス目に1～75の数字を割り当ててください。数字は昇順で重複がないようにしてください
-
+    25マスのテーブルを用意し、それぞれのマス目に1～75の数字を割り当ててください。数字は昇順で重複がないようにしてください   
     ![partOfTable](./img/partOfTable.PNG)
 
 1. ## whichPlace
-    partOfTableで作ったマスをクリックした際にその場所に割り当てられた数をalertするようにしてください
-
-
+    partOfTableで作ったマスをクリックした際にその場所に割り当てられた数をalertするようにしてください    
 
 1. ## jquery
     ボタンを押すと「Cosmos」が「Chaos」に書き換わるようにしてください  
-    jqueryのCDNを読み込んでjqueryを使って実装してください
-
+    jqueryのCDNを読み込んでjqueryを使って実装してください   
     [ノンプログラマーのためのjQuery入門](https://www.slideshare.net/hayatomizuno/jquery-7665168?ref=http://weboook.blog22.fc2.com/blog-entry-349.html)
-
-
 
 1. ## incrementHello
     ボタンを押すとボタンの下に 「Hello」 + 押した回数が追加されるプログラムを作成してください  
     jqueryを使って実装してください
 
-
-
 1. ## chageColor
     画面に要素を3つ配置しクリックすると背景色が変わるようにしてください  
     それぞれjqueryを使って実装してください  
-    やり方は一つとは限りません。それぞれ別の実装方法で実現してみて下さい
-
+    やり方は一つとは限りません。それぞれ別の実装方法で実現してみて下さい    
     ![changeColor](./img/changeColor.gif)
 
-
-
 1. ## addImageJq
-    ボタンを押す事に画像が追加されるようにしてください。jQueryを使って実装してください
-
+    ボタンを押す事に画像が追加されるようにしてください。jQueryを使って実装してください  
 
 1. ## hasImage
-    addImageJqを改造して、ボタンクリックした時画像がすでにある場合は追加しないようにしてください。jQueryを使って実装してください
-
+    addImageJqを改造して、ボタンクリックした時画像がすでにある場合は追加しないようにしてください。jQueryを使って実装してください    
 
 1. ## selectImage
-    hasImageを改造して、画像の追加上限を3枚にして下さい。jQueryを使って実装してください
-
-
+    hasImageを改造して、画像の追加上限を3枚にして下さい。jQueryを使って実装してください     
 
 1. ## removeImage
-    selectImageを改造して、クリックした時クリックされた画像が消去されるようにしてください。jQueryを使って実装してください
+    selectImageを改造して、クリックした時クリックされた画像が消去されるようにしてください。jQueryを使って実装してください   
 
 ---
-
-
 </details>
-
 <details>
 <summary>問50〜問100</summary>
+  ----------------------------------------
 
-
-    ----------------------------------------
-
-    ## ・BootStrapを使ってみよう
-
-
+## ・BootStrapを使ってみよう
     以下の問題では、CSSはbootstrapを利用して見ましょう。
     bootstrapは特定のクラスを与えるとすでに用意されたCSSを適用することができます。
     詳しくはwebで（https://getbootstrap.com/docs/4.0/getting-started/introduction/）
-
     ```html
-        <!-- CSS only -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- JS, Popper.js, and jQuery -->
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"/></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     ```
 
 50. ## find関数, closest関数を利用してみよう
-
     - wrapクラスのdivを用意し、`$(.wrap)`で取得したjQueryオブジェクトを変数wrapperに格納
     - find関数で'link-container'の中のaタグを変数'anchor'に格納しそのhref属性を取得しconsoleに出力してください
-
-        ```html
-        <div id="wrap">
-            <div class='link-container'>
-                <p class='link-text'>これはテキストだよ</p>
-                <a href="google.com">yahooo!!!</a>
-            </div>
-        </div>
-        ```
+    ```html
+    <div id="wrap">
+      <div class='link-container'>
+        <p class='link-text'>これはテキストだよ</p>
+        <a href="google.com">yahooo!!!</a>
+      </div>
+    </div>
+    ```
 
 1. ## click関数を使おう
-
     - buttonをクリックしたらクラスを'btn-default' -> 'btn-warning'に変わる
-    - ’ボタンだよ’ -> '押せません'にテキストを変更
+    - 'ボタンだよ' -> '押せません'にテキストを変更
     - ボタンを押せないようにする
-
     ```html
-        <div class="container">
-            <button type="button" class="js-button-event btn btn-primary">
-                これはボタンだよ
-            </button>
-        </div>
+    <div class="container">
+    <button type="button" class="js-button-event btn btn-primary">これはボタンだよ</button>
+    </div>
     ```
+
 1. ## fadeを使ってみよう
     - fade in
-
         'js-fade-in-button' を押したらboxクラスのhiddenになっているオブジェクトをfadeInする
     - fade out 
-
     現状で表示されているboxクラスのオブジェクトをfadeOutする
-
     ```css
     <style>
         span { color:red; cursor:pointer; }
-        .container > div { margin:3px; width:80px; display:none;
-            height:80px; float:left; }
+        .container > div { 
+            margin:3px; 
+            width:80px; 
+            display:none;
+            height:80px; 
+            float:left;
+        }
         div#one { background:#f00; }
         div#two { background:#0f0; }
         div#three { background:#00f; }
     </style>
     ```
-
     ```html
     <div class="container mt-4">
         <div id="one" class="box"></div>
         <div id="two" class="box"></div>
         <div id="three" class="box"></div>
         <div class='d-flex flex-column'>
-        <button class='btn btn-lg btn-info js-fade-in-button'>
-            fadeIn
-        </button>
-        <button class='btn btn-lg btn-warning js-fadeout-button'>
-            FadeOut
-        </button>
+        <button class='btn btn-lg btn-info js-fade-in-button'>fadeIn</button>
+        <button class='btn btn-lg btn-warning js-fadeout-button'>FadeOut</button>
         </div>
     </div>
     ```
@@ -584,24 +460,19 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
 
 1. ## local file
-    ローカルファイルをインプットするために必要なhtml要素を書いてください。インプットできるファイルは、画像ファイルを指定してください。
+    ローカルファイルをインプットするために必要なhtml要素を書いてください。インプットできるファイルは、画像ファイルを指定してください。  
 
 1. ## reading local file
-    問題60の続きです。インプットしたファイルのファイル名とファイルサイズをconsoleに出力してください。
+    問題60の続きです。インプットしたファイルのファイル名とファイルサイズをconsoleに出力してください。   
 
 1. ## display local file by base64
-    問題61の続きです。
-    readAsDataURLというメソッドを使って、取り込んだ画像をブラウザに表示してください。
+    問題61の続きです。readAsDataURLというメソッドを使って、取り込んだ画像をブラウザに表示してください。     
 
 1. ## display local file by blobURL
-    問題61の続きです。
-    createObjectURLというメソッドを使って、取り込んだ画像をブラウザに表示してください。
+    問題61の続きです。createObjectURLというメソッドを使って、取り込んだ画像をブラウザに表示してください。   
 
 1. ## file download
-    問題62,63の続きです。
-    アップロードしたファイルを、ブラウザからダウンロードできるようにしてください。
-    右クリックのメニューから画像を保存とは違います。
-    htmlの要素を使ってください。
+    問題62,63の続きです。アップロードしたファイルを、ブラウザからダウンロードできるようにしてください。右クリックのメニューから画像を保存とは違います。htmlの要素を使ってください。     
 
 1. ## Coming soon...
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
@@ -617,49 +488,33 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## Coming soon...
     ![construction](http://flasco.cocolog-nifty.com/blog/images/maguro.jpg)
-
 
 70. ## shake
-    ボタンを押して文字を揺らして下さい。CSSアニメーションを使って実装すること
-
+    ボタンを押して文字を揺らして下さい。CSSアニメーションを使って実装すること   
     ![shake](./img/shake.gif)
 
-
 1.  ## transition
-    CSSを使って画面に表示したボックスを大きくしたり小さくできるように実装して下さい
-
+    CSSを使って画面に表示したボックスを大きくしたり小さくできるように実装して下さい     
     ![transition](./img/transition.gif)
 
-
 1. ## fontawesome
-    Font AwesomeのCDNを利用して「twitter」「facebook」「instagram」のアイコンを画面に表示して下さい。
-
+    Font AwesomeのCDNを利用して「twitter」「facebook」「instagram」のアイコンを画面に表示して下さい。   
     [Font Awesome](https://fontawesome.com/icons?d=gallery)
 
-
-
 1. ## caption
-    CSSを使ってアイコンをホバーした際に背景が薄暗くなるようにして下さい
-
+    CSSを使ってアイコンをホバーした際に背景が薄暗くなるようにして下さい     
     ![caption](./img/captioin.gif)
 
-
-
-
-1. ## transition2
-    ボタンホバー時ボタンをカタカタ動くようにして下さい。
-
+1. ## animation2
+    ボタンをホバー時ボタンをカタカタ動くようにして下さい。   
     ![animation2](./img/animation2.gif)
 
-
 1. ## recursive1
-    1からnまでの総和を出力するメソッドを実装して下さい。条件として再帰的処理を利用すること
-
+    1からnまでの総和を出力するメソッドを実装して下さい。条件として再帰的処理を利用すること  
 
 1. ## primeNumber
-    2から1000までの自然数の中で、素数であるものを全て出力して下さい。
-    
-    出力例
+    2から1000までの自然数の中で、素数であるものを全て出力して下さい。   
+    出力例  
     ```text
     No.0 v: 2
     No.1 v: 3
@@ -673,16 +528,19 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     No.167 v: 997
     ```
 
-
 1. ## kaidan
-    n段の階段を登るのに１段、２段、３段づつの３つの方法が存在する時、階段を登り切る組み合わせは何通りあるか出力するメソッドを実装して下さい。nは1以上20未満とします
-
-    例
+    n段の階段を登るのに1段、2段、3段づつの3つの方法が存在する時、階段を登り切る組み合わせは何通りあるか出力するメソッドを実装して下さい。nは1以上20未満とします。   
+    例えば3段の場合、
+    1. 1段、1段、1段
+    1. 1段、2段
+    1. 2段、1段
+    1. 3段  
+    
+    の4通りあります。
+    例  
     ```text
     3 段の階段を登る方法は 4 通りありました
     4 段の階段を登る方法は 7 通りありました
     ```
-
-
 
 </details>

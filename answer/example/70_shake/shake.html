@@ -2,74 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <style>
-        .main {
-            margin: 100px;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <style>
+    .main {
+      margin: 100px;
+      text-align: center;
+    }
 
-        .shake {
-            animation: shake 1.7s 1;
-            color: red;
-        }
+    .shake {
+      animation: shake 1.7s 1;
+      color: red;
+    }
 
-        @-webkit-keyframes shake {
-            0%,
-            100% {
-                -webkit-transform: translateX(0);
-            }
-            5%,
-            10%,
-            15%,
-            20%,
-            25%,
-            30%,
-            35%,
-            45%,
-            55%,
-            65%,
-            75%,
-            85%,
-            95% {
-                -webkit-transform: translateX(-20px);
-            }
-            7%,
-            12%,
-            17%,
-            22%,
-            27%,
-            33%,
-            39%,
-            40%,
-            50%,
-            60%,
-            70%,
-            80%,
-            90% {
-                -webkit-transform: translateX(20px);
-            }
-        }
-    </style>
+    @-webkit-keyframes shake {
+
+      0%,
+      100% {
+        -webkit-transform: translateX(0);
+      }
+
+      5%,
+      10%,
+      15%,
+      20%,
+      25%,
+      30%,
+      35%,
+      45%,
+      55%,
+      65%,
+      75%,
+      85%,
+      95% {
+        -webkit-transform: translateX(-20px);
+      }
+
+      7%,
+      12%,
+      17%,
+      22%,
+      27%,
+      33%,
+      39%,
+      40%,
+      50%,
+      60%,
+      70%,
+      80%,
+      90% {
+        -webkit-transform: translateX(20px);
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="main">
-        <p class="who">I'm fixed</p>
-        <button class="btn">LèT ShaKe :)</button>
-    </div>
-    <script>
-        $('.btn').on('click', function () {
-            $('.who').text('Oops!').addClass('shake');
-            setTimeout(function () {
-                $('.who').text('I\'m fixed').removeClass('shake');
-            }, 1800);
-        });
-    </script>
+  <div class="main">
+    <p class="who">I'm fixed</p>
+    <button class="btn">LèT ShaKe :)</button>
+  </div>
+  <script>
+    $('.btn').on('click', function () {
+      $('.who').text('Oops!').addClass('shake');
+      setTimeout(function () {
+        $('.who').text('I\'m fixed').removeClass('shake');
+      }, 1800);
+    });
+  </script>
 
 </body>
 
