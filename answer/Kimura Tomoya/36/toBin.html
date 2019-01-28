@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+
+</head>
+
+<body>
+
+    <form name="math2">
+        <input type="text" value="11111111">：2進数<br>
+        <input type="text" value="">：10進数<br>
+        <input type="button" value="10進数に変換" onclick="jusinsu()">
+    </form>
+    <script>
+        function jusinsu() {
+
+
+            var suji2 = document.math2.elements[0].value;
+
+
+            document.math2.elements[1].value = parseInt(suji2, 2);
+
+        }
+    </script>
+</body>
+
+</html>

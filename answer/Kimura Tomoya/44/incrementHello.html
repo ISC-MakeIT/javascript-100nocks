@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <button>押す</button>
+    <div></div>
+    <script>
+        let cnt = 0;
+        $('button').on('click', function() {
+            cnt++;
+            $('div').append(`Hello ${cnt}回 <br>`);
+        });
+    </script>
+
+</body>
+
+
+
+</html>

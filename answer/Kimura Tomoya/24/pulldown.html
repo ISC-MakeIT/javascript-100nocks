@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+
+
+    <script>
+        function setSelectNumber() {
+            var select = document.createElement("select");
+            select.id = "number";
+            document.body.appendChild(select);
+            for (let i = 0; i <= 200; i++) {
+                var option = document.createElement("option");
+                option.textContent = i;
+                select.appendChild(option);
+            }
+        }
+        setSelectNumber();
+    </script>
+
+</body>
+
+</html>

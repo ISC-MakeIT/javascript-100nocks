@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        const number = [...Array(75).keys()].map(i => ++i);
+        const ary = [];
+
+        for (let i = 0; i < 25; i++) {
+            let s = Math.floor(Math.random() * number.length);
+            ary.push(number.splice(s, 1) - 0);
+        }
+
+        ary.sort((a, b) => a - b);
+        console.log(ary);
+    </script>
+
+</body>
+
+
+
+</html>

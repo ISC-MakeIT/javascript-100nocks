@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        td {
+            border: 5px solid red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="tbl">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <script>
+            const ary = [];
+            while (ary.length < 25) {
+                let num = Math.floor(Math.random() * 75) + 1;
+                let t = ary.includes(num);
+                if (t) {
+                    continue;
+                }
+                ary.push(num);
+            }
+            ary.sort(function(a, b) {
+                return a - b;
+            });
+            console.log(ary);
+
+            let Table = document.getElementById("tbl");
+            let Data = Table.rows.length;
+            let cnt = 0;
+            for (let i = 0; i < Data; i++) {
+                for (let s = 0; s < Data; s++) {
+                    let epi = ary[cnt];
+                    let td = Table.rows[s];
+                    let koramu = td.cells[i];
+                    koramu.innerHTML = epi;
+                    koramu.addEventListener("click", function() {
+                        alert(this.innerHTML);
+                    }, false);
+                    cnt++;
+                }
+            }
+            console.dir(Table);
+            console.log(Table.rows[0].cells[0].innerText);
+        </script>
+
+</body>
+
+</html>

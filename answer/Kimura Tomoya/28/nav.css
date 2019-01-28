@@ -1,0 +1,24 @@
+.foo {
+    background-color: #444;
+    padding: 3px;
+}
+
+.foo ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.foo li {
+    display: inline;
+    margin-right: 1em;
+}
+
+.foo a {
+    font-family: "Trebuchet MS", sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.foo a:hover {
+    background-color: fuchsia;
+}

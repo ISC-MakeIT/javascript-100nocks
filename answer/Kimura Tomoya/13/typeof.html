@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        function isArray(o) {
+            return o != null && typeof o === "object" && 'pop' in o && 'join' in o;
+        }
+        var num = 1;
+        var zero = 0;
+        var str = '1';
+        var zs = '0';
+
+        console.log(typeof(num));
+        console.log(typeof(zero));
+        console.log(typeof(str));
+        console.log(typeof(zs));
+    </script>
+
+
+</body>
+
+</html>

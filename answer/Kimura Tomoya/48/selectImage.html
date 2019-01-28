@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <button>画像</button>
+    <div></div>
+    <script>
+        $('button').click(() => {
+            if ($('img').length > 2) return;
+            $('div').append('<img src =24.png>');
+        });
+    </script>
+
+</body>

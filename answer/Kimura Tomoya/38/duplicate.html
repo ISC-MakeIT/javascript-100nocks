@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        const ary = [];
+        let num = Math.floor(Math.random() * 75) + 1;
+        ary.push(num);
+
+        for (let i = 0; i < 24; i++) {
+            num = Math.floor(Math.random() * 75) + 1;
+            let cnt = 0;
+            for (let j = 0; j < ary.length; j++) {
+                let item = ary[j];
+                if (num === item) {
+                    num = Math.floor(Math.random() * 75) + 1;
+                } else {
+                    cnt++;
+                }
+            }
+            if (cnt === ary.length) {
+                ary.push(num);
+            } else {
+                i--;
+            }
+        }
+        console.log(ary);
+    </script>
+
+</body>
+
+
+
+</html>

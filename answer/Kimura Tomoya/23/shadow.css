@@ -1,0 +1,21 @@
+#box {
+    height: 100px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+#box:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4) inset;
+}

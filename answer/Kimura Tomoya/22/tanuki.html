@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+
+
+    <script>
+        var Kaneko =
+            `ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。
+        わたたしがからだをゆすっても、ふきれいな音は出ないけど、あの鳴る鈴はわたたしのように、たたくさんなうたたは知らないよ。 
+        鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。`;
+
+        let ret = '';
+        ret = Kaneko.replace(/ふ/g, '');
+        ret = ret.replace(new RegExp(/た+た/, 'g'), 'た');
+        console.log(ret);
+    </script>
+
+
+</body>
+
+</html>

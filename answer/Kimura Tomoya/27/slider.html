@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+
+    <input type="range" name="range" id="range" value="30" min="1" max="50" step="1" oninput="change()">
+    <span id="val"></span>
+
+    <marquee scrolldelay="30" truespeed id="sp">癒し</marquee>
+    </div>
+
+
+    <script>
+        (function() {
+            document.getElementById('val').innerText = document.getElementById('range').value;
+        })();
+
+        function change() {
+            let speed = document.getElementById('range');
+            let mq = document.getElementById('sp');
+            mq.scrollDelay = speed.value;
+            document.getElementById('val').innerText = range.value;
+        }
+    </script>
+
+</body>
+
+</html>
+</body>
+
+</html>

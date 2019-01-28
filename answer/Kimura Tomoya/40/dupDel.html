@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <P>配列</P>
+    <div></div>
+    <input id="input">
+    <button onclick="dupDel()">実行</button>
+    <P>実行後の配列</P>
+    <div></div>
+    <script>
+        let ary = [];
+        while (ary.length < 26) {
+            let random = Math.floor(Math.random() * 75) + 1;
+            ary = ary.filter((num) => {
+                return num !== random
+            });
+            ary.push(random);
+        };
+        ary.sort((left, right) => {
+            return left - right;
+        });
+        document.getElementsByTagName('div')[0].innerHTML = ary;
+        const dupDel = () => {
+            const value = document.getElementById('input').value;
+            ary = ary.filter((num) => {
+                return num != value
+            });
+            document.getElementsByTagName('div')[1].innerHTML = ary;
+        }
+    </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+
+</head>
+
+<body>
+    <form>
+
+        <div>
+            <label for="num10">10進数</label>
+            <input type="text" id="num10" value="" placeholder="255">
+        </div>
+        <div>
+            <label for="num16">16進数</label>
+            <input type="text" id="num16" value="" placeholder="FF">
+        </div>
+        <button id="convert">変換</button>
+
+    </form>
+</body>
+
+<script>
+    const num10Field = document.getElementById("num10");
+    const num16Field = document.getElementById("num16");
+    const button = document.getElementById("convert");
+
+    const message = "数値を入力してください";
+
+    button.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        const radios = document.getElementsByName("type");
+        const num10 = num10Field.value;
+        const num16 = num16Field.value;
+
+        if (radios[0].checked) {
+            if (num10 == "") {
+                num10Field.value = message;
+                return;
+            }
+            num16Field.value = parseInt(num10).toString(16);
+        } else {
+            if (num16 == "") {
+                num16Field.value = message;
+                return;
+            }
+            num10Field.value = parseInt(num16, 16);
+        }
+    });
+
+    document.getElementById("clear").addEventListener("click", function(e) {
+        e.preventDefault();
+        num10Field.value = "";
+        num16Field.value = "";
+    });
+</script>
+
+</html>

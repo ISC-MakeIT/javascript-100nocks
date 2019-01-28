@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        const word = '二つ空の星こが～ぼ否光れの水お面吸ちいこたまれ～てゆ♪く';
+        let dec = '';
+        let pto = '';
+        for (let i = 1; i <= word.length; i++) {
+            if (0 === i % 3) {
+                dec += word[i - 1];
+            } else {
+                pto += word[i - 1];
+            }
+        }
+        console.log(dec); //=>こんばんは
+        console.log(pto); //=>やくみがきいているよ
+    </script>
+
+
+</body>
+
+</html>
