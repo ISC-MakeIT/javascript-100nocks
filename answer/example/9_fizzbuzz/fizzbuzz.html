@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <section>
+    <h1>fizz buzz</h1>
+    <p>count: <span id="count">0</span> <span id="extra"></span></p>
+    <button onclick="compute()">click me</button>
+  </section>
+  <script>
+    function compute() {
+      var count = document.getElementById('count');
+      var count_next = parseInt(count.innerText, 10) + 1;
+      var result = fizzbuzz(count_next);
+      document.getElementById('extra').innerText = result;
+      count.innerText = count_next;
+    };
+
+    function fizzbuzz(num) {
+      if (num % 3 === 0 && num % 5 === 0) {
+        return 'fizz buzz';
+      }
+      if (num % 3 === 0) {
+        return 'fizz';
+      }
+      if (num % 5 === 0) {
+        return 'buzz';
+      }
+      return '';
+    }
+  </script>
+</body>
+
+</html>

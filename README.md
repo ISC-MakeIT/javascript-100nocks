@@ -26,7 +26,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ![helloTable](./img/helloTable.png)
 
 1. ## console
-    console.logを使ってコンソールに「Hello JavaScript」と出力して下さい 
+    console.logを使ってコンソールに「Hello JavaScript」と出力して下さい  
     ![console](./img/console.png)
 
 1. ## bored
@@ -39,14 +39,12 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## sumSequence
     1からnまでの和をコンソール出力するプログラムを作成してください。nはフォームに入力された値である。for文を使用すること    
 
-1. ## anchor
-    [Yahoo Japan](https://www.yahoo.co.jp/)に遷移するリンクを3つ表示してください  
-    1つは同一のタブ上で開くように  
-    1つは新しいタブで開くように  
-    1つはjavascriptのwindow.open()を使用して開くように
-
 1. ## countUp
-    ボタンを押すと画面に表示された数字が1つずつカウントアップされるプログラムを作成してください。カウントが3の倍数の時に表示が変わるようにしてください  
+    画面に表示された数字がボタンが押される毎に1つずつカウントアップされるプログラムを作成してください。ただし、カウントが3の倍数の時に表示が変わるようにしてください。  
+
+1. ## fizzbuzz
+    画面に表示された数字がボタンが押される毎に1つずつカウントアップされるプログラムを作成してください。ただし、カウントが3の倍数の時『fizz』、5の倍数の時『buzz』、両方の倍数の時『fizz buzz』と出力して下さい。  
+    ![fizzbuzz](./img/fizzbuzz.gif)
 
 1. ## array1
     配列内を順にコンソール出力してください  
